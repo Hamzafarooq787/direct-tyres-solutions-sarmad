@@ -9,7 +9,7 @@ import QuoteContact from "./QuoteContact";
 import Services from "./Services";
 import WhyTrustUs from "./WhyTrustUs";
 
-export default function HomePage({ variant }: { variant: "v1" | "v2" }) {
+export default function HomePage() {
   return (
     <>
       <Navbar />
@@ -23,7 +23,7 @@ export default function HomePage({ variant }: { variant: "v1" | "v2" }) {
         <Pricing />
         <QuoteContact />
       </main>
-      <Footer variant={variant} />
+      <Footer />
     </>
   );
 }
