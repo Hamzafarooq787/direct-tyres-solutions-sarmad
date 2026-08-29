@@ -6,9 +6,6 @@ export const siteConfig = {
   logo: "https://lh3.googleusercontent.com/aida-public/AB6AXuCdlAGmUgc7LYfhvQYOTEnkeOGAmRhhc89_HcwWyNa88qXQkyEZ3XKi4xR0b_B_VbsJ939ZBgsWDqAZT39nGFiTRHUc4vkQoDUFthoP0YDDig0l6Y-qU-rfPdin4tlE6JxZDqYBAvX5AalkJI_W-OmFQV5mp3wMT4UXkAih2RouPJXk7o-DKuJZ8DJZnq_kYhGZCy0sJvxOYA282_DCUX-sWnj3cz7uTWWlp0Jd9eIeF2FMY5alqNJs",
 };
 
-export const heroImageV2 =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuCXRWOT0ZNH5-LTfWoTqESdmnYO94IL5RPrkKUK2vFp_AQ_2HpKJFvce3lJe6ZiuysCc_MXE9fCrrFTz6NgTmwdjvYpkDvgDI-kp0sJH17pm2B3O_JKetuFQnegO4fJg96GJ-rYaVBstTShGztE_AhNvFMxWbB4La7VTmfgaLBIxU83rH5XwzDA6bfn5jiMaBCviZzLb49C9CefE7xVpxBww5nZVtT-rdFqw5FGbXK7f17zU-1YODPs";
-
 export const navLinks = [
   { label: "Services", href: "#services" },
   { label: "Coverage", href: "#coverage" },
