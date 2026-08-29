@@ -57,6 +57,10 @@
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
+.text-shadow {
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
 .marquee-container {
   overflow: hidden;
   white-space: nowrap;
