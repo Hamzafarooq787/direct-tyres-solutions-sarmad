@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Mail, Phone, Share2, ThumbsUp } from "lucide-react";
 import { footerLinks, siteConfig } from "@/lib/site-data";
 
-export default function Footer({ variant }: { variant: "v1" | "v2" }) {
+export default function Footer() {
   return (
     <footer className="w-full bg-primary-dark text-white pt-20 pb-8 border-t border-white/5">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 px-4 md:px-8 max-w-7xl mx-auto mb-16">
@@ -101,7 +101,7 @@ export default function Footer({ variant }: { variant: "v1" | "v2" }) {
           © {new Date().getFullYear()} {siteConfig.name}. {siteConfig.tagline}.
         </p>
         <Link
-          href={variant === "v1" ? "/home-2" : "/"}
+          href="/home-2"
           className="text-gray-500 hover:text-secondary transition-colors"
         >
           View alternate homepage layout
