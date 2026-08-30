@@ -8,13 +8,13 @@ export default function Footer() {
     <footer className="w-full bg-primary-dark text-white pt-20 pb-8 border-t border-white/5">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 px-4 md:px-8 max-w-7xl mx-auto mb-16">
         <div className="lg:col-span-1">
-          <div className="font-heading text-xl font-bold text-secondary mb-6 flex items-center">
+          <div className="mb-6 flex items-center">
             <Image
-              alt="Logo"
+              alt={`${siteConfig.name} Logo`}
               src={siteConfig.logo}
-              width={32}
-              height={32}
-              className="h-8 w-auto mr-3 mix-blend-screen filter brightness-200"
+              width={siteConfig.logoWidth}
+              height={siteConfig.logoHeight}
+              className="h-10 w-auto object-contain"
             />
           </div>
           <p className="font-sans text-sm text-gray-400 mb-8 leading-relaxed">

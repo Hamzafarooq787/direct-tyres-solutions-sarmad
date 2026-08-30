@@ -10,17 +10,14 @@ export default function Footer2() {
     <footer className="bg-[#111111] text-gray-400 py-16">
       <div className="max-w-7xl mx-auto px-4 md:px-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div>
-          <div className="flex items-center gap-2 mb-6">
+          <div className="mb-6">
             <Image
               alt={`${siteConfigV2.name} Logo`}
               src={siteConfigV2.logo}
-              width={32}
-              height={32}
-              className="h-8 w-8 object-contain brightness-0 invert"
+              width={siteConfigV2.logoWidth}
+              height={siteConfigV2.logoHeight}
+              className="h-10 w-auto object-contain"
             />
-            <span className="text-2xl font-black text-white tracking-tight">
-              {siteConfigV2.brand}
-            </span>
           </div>
           <p className="text-sm leading-relaxed mb-6">
             Professional, fast, and reliable mobile tyre fitting service

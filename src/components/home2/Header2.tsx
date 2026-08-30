@@ -13,17 +13,18 @@ export default function Header2() {
   return (
     <header className="bg-white/90 backdrop-blur-md text-[#1c1b1b] top-0 sticky z-50 border-b border-[#f0edec]">
       <div className="flex justify-between items-center w-full px-4 md:px-16 py-4 max-w-7xl mx-auto">
-        <Link href="/home-2" className="flex items-center gap-2">
+        <Link
+          href="/home-2"
+          className="flex items-center h-10 bg-[#1a1a1a] rounded-lg px-3 py-1.5"
+        >
           <Image
             alt={`${siteConfigV2.name} Logo`}
             src={siteConfigV2.logo}
-            width={40}
-            height={40}
-            className="h-10 w-10 object-contain"
+            width={siteConfigV2.logoWidth}
+            height={siteConfigV2.logoHeight}
+            className="h-full w-auto object-contain"
+            priority
           />
-          <span className="text-xl font-extrabold text-[#1a1a1a] tracking-tight hidden sm:block">
-            {siteConfigV2.brand}
-          </span>
         </Link>
 
         <nav className="hidden md:flex gap-6">
