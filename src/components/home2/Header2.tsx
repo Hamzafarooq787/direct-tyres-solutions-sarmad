@@ -38,7 +38,7 @@ export default function Header2() {
           />
         </Link>
 
-        <nav className="hidden md:flex gap-6">
+        <nav className="hidden md:flex gap-8">
           {navLinksV2.map((link) => (
             <a
               key={link.label}
@@ -50,7 +50,7 @@ export default function Header2() {
           ))}
         </nav>
 
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden md:flex items-center gap-6">
           <div className="flex flex-col items-end mr-2">
             <span className="text-xs font-bold text-white/60 uppercase tracking-wider">
               24/7 Emergency
