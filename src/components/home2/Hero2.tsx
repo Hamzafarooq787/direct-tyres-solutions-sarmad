@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Handshake, MessageCircle, PhoneCall, Star, Timer, BadgeCheck } from "lucide-react";
 import Reveal from "../Reveal";
 import GoogleIcon from "./GoogleIcon";
-import { heroImageV2, siteConfigV2 } from "@/lib/site-data-v2";
+import { heroFleetImage, siteConfigV2 } from "@/lib/site-data-v2";
 
 const trustSignals = [
   { icon: Handshake, label: "RAC/AA Partner" },
@@ -17,8 +17,8 @@ export default function Hero2() {
     <section className="relative min-h-[95vh] flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          alt="Mobile tyre fitting van at night"
-          src={heroImageV2}
+          alt="Direct Tyre Solutions fleet of mobile tyre-fitting vans outside the depot"
+          src={heroFleetImage}
           fill
           priority
           sizes="100vw"
