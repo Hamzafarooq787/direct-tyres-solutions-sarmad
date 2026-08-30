@@ -1,14 +1,21 @@
 import { trustBrandsV2 } from "@/lib/site-data-v2";
 
 export default function TrustStrip2() {
+  const items = [...trustBrandsV2, ...trustBrandsV2];
+
   return (
-    <section className="bg-[#fcf9f8] border-b border-[#f0edec] py-6">
-      <div className="max-w-7xl mx-auto px-4 md:px-16 flex flex-wrap justify-between items-center gap-6 opacity-50 grayscale">
-        {trustBrandsV2.map((brand) => (
-          <span key={brand} className="text-xl font-black tracking-widest text-[#1a1a1a]">
-            {brand}
-          </span>
-        ))}
+    <section className="bg-[#fcf9f8] border-b border-[#f0edec] py-6 overflow-hidden">
+      <div className="marquee-container opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+        <div className="marquee-content flex items-center space-x-16 px-8 animate-marquee">
+          {items.map((brand, i) => (
+            <span
+              key={`${brand}-${i}`}
+              className="text-xl font-black tracking-widest text-[#1a1a1a] shrink-0"
+            >
+              {brand}
+            </span>
+          ))}
+        </div>
       </div>
     </section>
   );

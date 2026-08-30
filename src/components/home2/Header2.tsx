@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Menu, PhoneCall, X } from "lucide-react";
@@ -8,15 +8,26 @@ import { navLinksV2, siteConfigV2 } from "@/lib/site-data-v2";
 
 export default function Header2() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const telHref = `tel:${siteConfigV2.phone.replace(/\s/g, "")}`;
 
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    onScroll();
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <header className="bg-white/90 backdrop-blur-md text-[#1c1b1b] top-0 sticky z-50 border-b border-[#f0edec]">
-      <div className="flex justify-between items-center w-full px-4 md:px-16 py-4 max-w-7xl mx-auto">
-        <Link
-          href="/home-2"
-          className="flex items-center h-10 bg-[#1a1a1a] rounded-lg px-3 py-1.5"
-        >
+    <header
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-[#1a1a1a] shadow-[0_8px_24px_rgba(0,0,0,0.25)]"
+          : "bg-transparent"
+      }`}
+    >
+      <div className="flex justify-between items-center w-full px-4 md:px-16 py-3 max-w-7xl mx-auto">
+        <Link href="/home-2" className="flex items-center h-14 shrink-0">
           <Image
             alt={`${siteConfigV2.name} Logo`}
             src={siteConfigV2.logo}
@@ -32,7 +43,7 @@ export default function Header2() {
             <a
               key={link.label}
               href={link.href}
-              className="text-sm font-semibold text-[#5a4136] hover:text-[#1a1a1a] transition-colors duration-200"
+              className="text-sm font-semibold text-white/80 hover:text-white transition-colors duration-200"
             >
               {link.label}
             </a>
@@ -41,12 +52,12 @@ export default function Header2() {
 
         <div className="hidden md:flex items-center gap-4">
           <div className="flex flex-col items-end mr-2">
-            <span className="text-xs font-bold text-gray-500 uppercase tracking-wider">
+            <span className="text-xs font-bold text-white/60 uppercase tracking-wider">
               24/7 Emergency
             </span>
             <a
               href={telHref}
-              className="text-[#1a1a1a] font-black text-lg tracking-tight hover:text-[#ff6b00] transition-colors"
+              className="text-white font-black text-lg tracking-tight hover:text-[#ff6b00] transition-colors"
             >
               {siteConfigV2.phone}
             </a>
@@ -61,7 +72,7 @@ export default function Header2() {
 
         <button
           type="button"
-          className="md:hidden text-[#1a1a1a] p-2"
+          className="md:hidden text-white p-2"
           aria-label="Toggle menu"
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((open) => !open)}
@@ -71,13 +82,13 @@ export default function Header2() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden border-t border-[#f0edec] bg-white">
+        <div className="md:hidden border-t border-white/10 bg-[#1a1a1a]">
           <div className="flex flex-col px-4 py-4 space-y-4">
             {navLinksV2.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
-                className="text-sm font-semibold text-[#5a4136]"
+                className="text-sm font-semibold text-white/80"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}

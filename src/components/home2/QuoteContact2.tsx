@@ -41,7 +41,7 @@ export default function QuoteContact2() {
   }
 
   return (
-    <section className="bg-[#1a1a1a] py-24 relative overflow-hidden" id="contact">
+    <section className="bg-[#1a1a1a] py-24 relative overflow-hidden scroll-mt-24" id="contact">
       <div className="absolute right-0 top-0 w-1/2 h-full opacity-10 pointer-events-none">
         <Image
           alt=""

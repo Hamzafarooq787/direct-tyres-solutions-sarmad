@@ -24,26 +24,22 @@ export default function Hero2() {
           sizes="100vw"
           className="object-cover scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a]/95 via-[#1a1a1a]/75 to-[#1a1a1a]/30" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] via-transparent to-transparent opacity-80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a] via-[#1a1a1a]/85 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/70 via-transparent to-transparent" />
       </div>
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-16 grid grid-cols-1 md:grid-cols-12 gap-6 pt-28 pb-16">
         <Reveal className="md:col-span-9 lg:col-span-8 flex flex-col justify-center space-y-7">
-          <div className="inline-flex items-center gap-3 bg-white rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.25)] pl-3 pr-5 py-2.5 w-fit">
+          <div className="inline-flex items-center gap-3 bg-white rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.25)] pl-3 pr-5 py-2.5 w-fit whitespace-nowrap">
             <GoogleIcon className="h-8 w-8 shrink-0" />
-            <div className="h-8 w-px bg-gray-200" />
-            <div>
-              <div className="flex items-center gap-1.5 leading-none">
-                <span className="text-lg font-black text-[#1a1a1a]">4.9</span>
-                <div className="flex text-[#FBBC05]">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} className="h-3.5 w-3.5" fill="currentColor" strokeWidth={0} />
-                  ))}
-                </div>
-              </div>
-              <p className="text-xs font-semibold text-gray-500 mt-0.5">500+ Google Reviews</p>
+            <div className="h-8 w-px bg-gray-200 shrink-0" />
+            <span className="text-lg font-black text-[#1a1a1a]">4.9</span>
+            <div className="flex text-[#FBBC05] shrink-0">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <Star key={i} className="h-3.5 w-3.5" fill="currentColor" strokeWidth={0} />
+              ))}
             </div>
+            <span className="text-xs font-semibold text-gray-500">500+ Google Reviews</span>
           </div>
 
           <div>
@@ -51,11 +47,9 @@ export default function Hero2() {
               <span className="w-2 h-2 rounded-full bg-[#ff6b00] animate-pulse" />
               North West&apos;s Trusted Mobile Tyre Specialist
             </span>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[1.05] tracking-tighter uppercase text-shadow">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[1.05] tracking-tighter uppercase">
               24/7 Mobile <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff6b00] to-orange-400">
-                Tyre Fitting
-              </span>
+              <span className="text-[#ff6b00]">Tyre Fitting</span>
             </h1>
           </div>
 
