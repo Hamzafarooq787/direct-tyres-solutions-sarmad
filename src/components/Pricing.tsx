@@ -4,7 +4,7 @@ import { pricingPlans } from "@/lib/site-data";
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-24 bg-surface-light px-4 md:px-8">
+    <section id="pricing" className="py-24 bg-surface-light px-4 md:px-8 scroll-mt-20">
       <div className="max-w-7xl mx-auto">
         <Reveal className="text-center mb-16">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-4">

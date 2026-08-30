@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { CheckCircle2, FileText, PhoneCall, Star } from "lucide-react";
 import Reveal from "./Reveal";
-import { siteConfig } from "@/lib/site-data";
+import { heroFleetImage, siteConfig } from "@/lib/site-data";
 
 export default function Hero() {
   return (
@@ -58,8 +58,8 @@ export default function Hero() {
           <div className="absolute inset-0 bg-primary/80 md:hidden z-10" />
           <div className="hidden md:block absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-primary to-transparent z-10" />
           <Image
-            alt="Mobile tyre fitting at night"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYoUX5vVinHd9KXFUTSVapc_vPnNxMwjs8kUk3dF7yUZX1DD9UrJ0z_v1OhY6KnJyR4JzAy2XVNZia-_-YZV-s2kC2SRdX0uwJEuUwNliaF3Z7j0p9Ps2II50N-SPeMEOz5UHM4nDJM_4Wu2nPlnkWM75otwO1eIbRYPriZw6SOPhQbhLs8hbOsezwHk7ld9Zl2YOC7w8jX9F9Py4mW1nvoEJg6SRyWs92NZqLq-tme5VNUzu3JhPP"
+            alt="Direct Tyre Solutions fleet of mobile tyre-fitting vans outside the depot"
+            src={heroFleetImage}
             fill
             priority
             sizes="(max-width: 768px) 100vw, 50vw"

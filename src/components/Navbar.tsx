@@ -11,22 +11,20 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 10);
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    onScroll();
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 bg-surface border-b border-border-color h-[72px] flex items-center ${
-        scrolled ? "nav-scrolled" : ""
+      className={`fixed top-0 w-full z-50 transition-all duration-300 h-20 flex items-center ${
+        scrolled ? "bg-primary shadow-[0_8px_24px_rgba(0,0,0,0.25)]" : "bg-transparent"
       }`}
     >
       <div className="flex justify-between items-center w-full px-4 md:px-8 max-w-7xl mx-auto h-full">
-        <Link
-          href="/"
-          className="shrink-0 h-12 flex items-center bg-primary rounded-lg px-3 py-1.5"
-        >
+        <Link href="/" className="shrink-0 h-14 flex items-center">
           <Image
             alt={`${siteConfig.name} Logo`}
             src={siteConfig.logo}
@@ -42,7 +40,7 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="nav-link text-primary font-semibold text-sm tracking-wide uppercase hover:text-primary transition-colors"
+              className="nav-link text-white/80 font-semibold text-sm tracking-wide uppercase hover:text-white transition-colors"
             >
               {link.label}
             </a>
@@ -59,7 +57,7 @@ export default function Navbar() {
           </a>
           <button
             type="button"
-            className="md:hidden text-primary p-2"
+            className="md:hidden text-white p-2"
             aria-label="Toggle menu"
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen((open) => !open)}
@@ -70,13 +68,13 @@ export default function Navbar() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden absolute top-[72px] left-0 w-full bg-surface border-b border-border-color shadow-lg">
+        <div className="md:hidden absolute top-20 left-0 w-full bg-primary shadow-lg">
           <div className="flex flex-col px-4 py-4 space-y-4">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-primary font-semibold text-sm tracking-wide uppercase"
+                className="text-white/80 font-semibold text-sm tracking-wide uppercase"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}

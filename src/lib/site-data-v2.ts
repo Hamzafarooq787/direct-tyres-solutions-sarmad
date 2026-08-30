@@ -14,7 +14,7 @@ export const siteConfigV2 = {
 export const heroImageV2 =
   "https://lh3.googleusercontent.com/aida/AEtjO1UNMRFx3w_ydWby-pgEq-2MdYouU6WYoNvHL1A9f9CqqY9sjmW4hNR7_fr0C3VVL1ItJ_tocrGL-x2E1ApHeFi19VxfBmThrzuTRGq0G0oD6XXE09bZTe8CNBM6r5Md-142E4ICy7tMRUPSvXsrbogGJ0KRiu-5aRjMVPTn_U8WLI2P4hZb7vVnaSEBFvf-jIQw6HLb6a_VUB0FXjavxYQayttJuAmUWh8YipNYpeCWyRJoTsqn-UeovzGr";
 
-export const heroFleetImage = "/hero-section-images-936x527.webp";
+export { heroFleetImage } from "./site-data";
 
 export const navLinksV2 = [
   { label: "Home", href: "#" },

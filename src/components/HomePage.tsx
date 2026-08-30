@@ -13,7 +13,7 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
-      <main className="pt-[72px]">
+      <main>
         <Hero />
         <CoverageMarquee />
         <WhyTrustUs />
