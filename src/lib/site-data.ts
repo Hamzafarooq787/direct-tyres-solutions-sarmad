@@ -3,7 +3,9 @@ export const siteConfig = {
   tagline: "Mobile Tyre Fitting Excellence",
   phone: "0800 123 4567",
   email: "info@tyreassist247.co.uk",
-  logo: "https://lh3.googleusercontent.com/aida-public/AB6AXuCdlAGmUgc7LYfhvQYOTEnkeOGAmRhhc89_HcwWyNa88qXQkyEZ3XKi4xR0b_B_VbsJ939ZBgsWDqAZT39nGFiTRHUc4vkQoDUFthoP0YDDig0l6Y-qU-rfPdin4tlE6JxZDqYBAvX5AalkJI_W-OmFQV5mp3wMT4UXkAih2RouPJXk7o-DKuJZ8DJZnq_kYhGZCy0sJvxOYA282_DCUX-sWnj3cz7uTWWlp0Jd9eIeF2FMY5alqNJs",
+  logo: "/Tyres-assist-logo-yellow.webp",
+  logoWidth: 1238,
+  logoHeight: 293,
 };
 
 export const navLinks = [

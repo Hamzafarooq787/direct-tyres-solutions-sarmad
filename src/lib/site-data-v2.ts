@@ -6,7 +6,9 @@ export const siteConfigV2 = {
   email: "info@rapidresponsetyres.co.uk",
   serviceArea: "North West UK",
   areasCovered: "Oldham, Manchester, Stockport, Warrington, Bolton",
-  logo: "https://lh3.googleusercontent.com/aida/AEtjO1Vbjqn8LRRY3SHgVW2aZozGOob4pucvXZOHEgv9xMf4w6kz4oxyiRSotV5MGA6AROyrL0ayd6NlNvzCKK5o9tNlDIrStXPZIJ6cm4MtDl8S9rD_8mt2pmKu7MsankVUPNiWOvJhCc6rGi40Et45XTxrh0Dd5tFzhcibdNsdr4dN22fTwzmXw5lL0UJteO7K4U05Vy8meZD8ju0O2w2ozLVElaZrSjnJjiUTrSuPZw1JYMa5jEUO-evNCvQ",
+  logo: "/tyre-assist-red-logo.webp",
+  logoWidth: 1767,
+  logoHeight: 485,
 };
 
 export const heroImageV2 =

@@ -23,13 +23,16 @@ export default function Navbar() {
       }`}
     >
       <div className="flex justify-between items-center w-full px-4 md:px-8 max-w-7xl mx-auto h-full">
-        <Link href="/" className="shrink-0 h-12 flex items-center">
+        <Link
+          href="/"
+          className="shrink-0 h-12 flex items-center bg-primary rounded-lg px-3 py-1.5"
+        >
           <Image
             alt={`${siteConfig.name} Logo`}
             src={siteConfig.logo}
-            width={160}
-            height={48}
-            className="h-full w-auto object-contain mix-blend-multiply"
+            width={siteConfig.logoWidth}
+            height={siteConfig.logoHeight}
+            className="h-full w-auto object-contain"
             priority
           />
         </Link>
