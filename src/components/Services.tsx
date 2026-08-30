@@ -12,7 +12,7 @@ const icons = {
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 bg-surface px-4 md:px-8">
+    <section id="services" className="py-24 bg-surface px-4 md:px-8 scroll-mt-20">
       <div className="max-w-7xl mx-auto">
         <Reveal className="text-center mb-16">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-4">

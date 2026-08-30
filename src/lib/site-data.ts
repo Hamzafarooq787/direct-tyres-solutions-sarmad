@@ -8,6 +8,8 @@ export const siteConfig = {
   logoHeight: 293,
 };
 
+export const heroFleetImage = "/hero-section-images-936x527.webp";
+
 export const navLinks = [
   { label: "Services", href: "#services" },
   { label: "Coverage", href: "#coverage" },
