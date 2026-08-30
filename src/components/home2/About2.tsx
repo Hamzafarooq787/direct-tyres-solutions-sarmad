@@ -7,7 +7,7 @@ const icons = { "verified-user": ShieldCheck, group: Users } as const;
 
 export default function About2() {
   return (
-    <section className="py-24 bg-[#fcf9f8]" id="about">
+    <section className="py-24 bg-[#fcf9f8] scroll-mt-24" id="about">
       <div className="max-w-7xl mx-auto px-4 md:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <Reveal className="order-2 lg:order-1">

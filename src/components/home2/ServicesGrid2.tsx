@@ -12,7 +12,7 @@ const icons = {
 
 export default function ServicesGrid2() {
   return (
-    <section className="py-24 bg-white" id="services">
+    <section className="py-24 bg-white scroll-mt-24" id="services">
       <div className="max-w-7xl mx-auto px-4 md:px-16">
         <Reveal className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
           <div className="max-w-2xl">
