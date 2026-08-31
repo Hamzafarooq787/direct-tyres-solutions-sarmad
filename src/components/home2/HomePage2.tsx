@@ -1,6 +1,7 @@
 import About2 from "./About2";
 import Faq2 from "./Faq2";
 import Footer2 from "./Footer2";
+import Gallery2 from "./Gallery2";
 import Header2 from "./Header2";
 import Hero2 from "./Hero2";
 import HowItWorks2 from "./HowItWorks2";
@@ -19,6 +20,7 @@ export default function HomePage2() {
       <About2 />
       <HowItWorks2 />
       <WhyChooseUsBento2 />
+      <Gallery2 />
       <QuoteContact2 />
       <Faq2 />
       <Footer2 />
