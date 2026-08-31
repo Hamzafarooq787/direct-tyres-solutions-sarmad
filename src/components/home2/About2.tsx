@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ShieldCheck, Users } from "lucide-react";
 import Reveal from "../Reveal";
-import { aboutStatsV2, heroImageV2, siteConfigV2 } from "@/lib/site-data-v2";
+import { aboutImageV2, aboutStatsV2, siteConfigV2 } from "@/lib/site-data-v2";
 
 const icons = { "verified-user": ShieldCheck, group: Users } as const;
 
@@ -55,8 +55,8 @@ export default function About2() {
             <div className="absolute inset-0 bg-[#ff6b00] rounded-[2rem] transform translate-x-4 translate-y-4 opacity-20" />
             <div className="relative z-10 w-full h-[500px] rounded-[2rem] shadow-2xl overflow-hidden">
               <Image
-                alt={`${siteConfigV2.name} team`}
-                src={heroImageV2}
+                alt={`${siteConfigV2.name} technician with a branded mobile tyre-fitting van`}
+                src={aboutImageV2}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"

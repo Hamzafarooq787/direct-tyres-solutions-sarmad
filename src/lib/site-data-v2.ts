@@ -16,6 +16,8 @@ export const heroImageV2 =
 
 export { heroFleetImage } from "./site-data";
 
+export const aboutImageV2 = "/about-rapid-response-tyres.webp";
+
 export const navLinksV2 = [
   { label: "Home", href: "#" },
   { label: "About", href: "#about" },
