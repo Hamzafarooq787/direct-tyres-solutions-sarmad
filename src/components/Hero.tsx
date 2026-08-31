@@ -26,15 +26,17 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent" />
       </div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-12 gap-6 pt-36 md:pt-40 pb-16">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-12 gap-6 pt-28 sm:pt-32 md:pt-40 pb-16">
         <Reveal className="md:col-span-9 lg:col-span-8 flex flex-col justify-center space-y-5">
           <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-secondary/10 border border-secondary/30 text-secondary font-bold text-xs tracking-wide uppercase w-fit">
             <span className="w-2 h-2 rounded-full bg-secondary mr-2 animate-pulse" />
             Technicians on Standby 24/7
           </div>
 
-          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-            24/7 Mobile Tyre Fitting — We Come to You
+          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.15] tracking-tight">
+            24/7 Mobile Tyre Fitting
+            <br />
+            <span className="text-secondary">— We Come to You</span>
           </h1>
 
           <p className="font-sans text-lg md:text-xl text-gray-300 max-w-3xl leading-relaxed">
@@ -46,16 +48,16 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-3 pt-1">
             <a
               href={telHref}
-              className="animate-pulse-amber btn-scale flex items-center justify-center px-8 py-4 bg-secondary text-primary font-bold rounded-full shadow-lg h-14 text-base w-full sm:w-auto"
+              className="animate-pulse-amber btn-scale flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 bg-secondary text-primary font-bold rounded-full shadow-lg min-h-14 text-sm sm:text-base w-full sm:w-auto"
             >
-              <PhoneCall className="mr-2 h-5 w-5" fill="currentColor" strokeWidth={0} />
+              <PhoneCall className="h-5 w-5 shrink-0" fill="currentColor" strokeWidth={0} />
               Call Now — Emergency
             </a>
             <a
               href="#quote"
-              className="btn-scale flex items-center justify-center px-8 py-4 bg-white/5 border border-white/30 text-white font-bold rounded-full hover:bg-white hover:text-primary transition-all h-14 text-base w-full sm:w-auto backdrop-blur-sm"
+              className="btn-scale flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 bg-white/5 border border-white/30 text-white font-bold rounded-full hover:bg-white hover:text-primary transition-all min-h-14 text-sm sm:text-base w-full sm:w-auto backdrop-blur-sm"
             >
-              <FileText className="mr-2 h-5 w-5" />
+              <FileText className="h-5 w-5 shrink-0" />
               Get a Quote
             </a>
           </div>

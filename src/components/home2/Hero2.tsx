@@ -28,7 +28,7 @@ export default function Hero2() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/70 via-transparent to-transparent" />
       </div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-16 grid grid-cols-1 md:grid-cols-12 gap-6 pt-36 md:pt-40 pb-16">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-16 grid grid-cols-1 md:grid-cols-12 gap-6 pt-28 sm:pt-32 md:pt-40 pb-16">
         <Reveal className="md:col-span-9 lg:col-span-8 flex flex-col justify-center space-y-5">
           <div className="inline-flex items-center gap-2.5 bg-white rounded-full shadow-[0_8px_30px_rgba(0,0,0,0.25)] pl-2.5 pr-4 py-1.5 w-fit whitespace-nowrap">
             <GoogleIcon className="h-5 w-5 shrink-0" />
@@ -62,16 +62,18 @@ export default function Hero2() {
           <div className="flex flex-col sm:flex-row gap-3 pt-1">
             <a
               href={telHref}
-              className="bg-[#ff6b00] text-white rounded-full px-8 py-4 font-semibold flex items-center justify-center transition-all duration-300 hover:bg-orange-700 hover:shadow-[0_4px_14px_0_rgba(255,107,0,0.39)] hover:-translate-y-0.5 w-full sm:w-auto h-14 text-base"
+              className="bg-[#ff6b00] text-white rounded-full px-6 sm:px-8 py-3.5 font-semibold flex items-center justify-center gap-2 transition-all duration-300 hover:bg-orange-700 hover:shadow-[0_4px_14px_0_rgba(255,107,0,0.39)] hover:-translate-y-0.5 w-full sm:w-auto min-h-14 text-sm sm:text-base"
             >
-              <PhoneCall className="mr-2 h-5 w-5" fill="currentColor" strokeWidth={0} />
-              CALL NOW: {siteConfigV2.phone}
+              <PhoneCall className="h-5 w-5 shrink-0" fill="currentColor" strokeWidth={0} />
+              <span>
+                CALL NOW: <span className="whitespace-nowrap">{siteConfigV2.phone}</span>
+              </span>
             </a>
             <a
               href="#"
-              className="bg-white/5 border border-white/30 text-white rounded-full px-8 py-4 font-semibold flex items-center justify-center transition-all duration-300 hover:bg-white hover:text-[#1a1a1a] w-full sm:w-auto h-14 text-base backdrop-blur-sm"
+              className="bg-white/5 border border-white/30 text-white rounded-full px-6 sm:px-8 py-3.5 font-semibold flex items-center justify-center gap-2 transition-all duration-300 hover:bg-white hover:text-[#1a1a1a] w-full sm:w-auto min-h-14 text-sm sm:text-base backdrop-blur-sm"
             >
-              <MessageCircle className="mr-2 h-5 w-5" />
+              <MessageCircle className="h-5 w-5 shrink-0" />
               WhatsApp Support
             </a>
           </div>
