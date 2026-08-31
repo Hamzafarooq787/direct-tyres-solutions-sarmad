@@ -32,32 +32,28 @@ export const servicesV2 = [
     title: "Mobile Tyre Fitting",
     description:
       "Home, work, or roadside. We bring the tyre shop to your driveway at your convenience.",
-    image:
-      "https://lh3.googleusercontent.com/aida/AEtjO1XL8J3mgKLxaXy-OSapYL_u_ajtFLKe7YvKTA9ShXYg6SerB-ByoLgRNX9gx-fWXDFk0X0AuA53H-YaYAiC1RoJsmIuz-tAO72Ju1wetBUjAHEv5W0j8rnSJAWTRv3LSGd4xTxxbjNloG8J5wQFL3qP54f0pft7Gk3iHfxZPg9bQgkb7PilCcjcNSxQu2g31iTxC_iqJ48Wn1BnYCIfFaIw3tSrRCvXC6bD0d86szoIm7b-TuHG2yDrAhw",
+    image: "/mobile-tyre-fitting-3-1536x1024.webp",
   },
   {
     icon: "tune",
     title: "Wheel Balancing",
     description:
       "Computerised mobile wheel balancing to ensure a smooth ride and prevent uneven tyre wear.",
-    image:
-      "https://lh3.googleusercontent.com/aida/AEtjO1WwLc6IfhjtpSOr-SNGDUyxtrb81kjvRBTCG-_SQcEO3tujXAQBSg0T1ZK0B0nXBFmYiqgS8Y7tcBYzDF4ttAM-T4niMAU4JQK3lr8KVU118Xgt8_UCXbsDrQy1HtldbaIHIZ_mTay11FyIPg1pkTBDPsZ1ZOhMDbPtTFH8swCgf335U1aAh3IcVaZLw1sdmIxyZ2Y3357mFYeOFWuGGAXDlm5OZyEJeKhSivzfjC7oaD9NX7n7hU3EMZo",
+    image: "/wheel-balancing-2-1536x1024.webp",
   },
   {
     icon: "healing",
     title: "Puncture Repairs",
     description:
       "Safe and reliable puncture repairs carried out to BSAU159 standards, saving you the cost of a new tyre.",
-    image:
-      "https://lh3.googleusercontent.com/aida/AEtjO1Vtj0DYcvod_BWjj-R9CdzKBjg3-AmRZb3a2tEVVdCF9QYFVhFpv2ox0CmVlT1riU0x9d36xM4DtYurnYvDUcUQ3Qrp4l1V7QTce_A7R2ikhNYZECUSJhEiaeBCnwusp3xC9prAXUZJ-1UgkaPC0jSfDUxFS5fJHJXOCWZ8nNjjl424p99K0sb1leuOmyD6t8Us8Ag2iSdpUDsRsIG4J3Ecub97w-PVUPWXkDC1oHrdISS84anLf8ULlkI",
+    image: "/service-puncture-repair.webp",
   },
   {
     icon: "lock-open",
     title: "Locking Nut Removal",
     description:
       "Lost your locking wheel nut key? Our expert technicians can safely remove locking nuts without damaging your alloys.",
-    image:
-      "https://lh3.googleusercontent.com/aida/AEtjO1ULU7LD5RoxjwQFGZuxH19lCWlIUIy22ypWr3Wk2bkG8VvUbca9WXbXQBtN804ks1aYJMDepttLoenz1vYK0HERBFkMVqXA79_QltFjfLw0Sl9vRu9uX9xAndM8Q_MgKdcAkR0xZzjihK5S6vnGFASWsi4_TUGobcg7XUHRp0ta_PuZ5QspXgmm-W3bfVnFlNAupluaWkgxY7wNGqAU5qQf9B3e4ra-MA7fwZG1UxRQiF_R3zKfCR3QKGQL",
+    image: "/service-locking-wheel-nut.webp",
   },
 ] as const;
 
