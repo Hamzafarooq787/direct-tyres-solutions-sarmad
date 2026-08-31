@@ -10,6 +10,39 @@ export const siteConfig = {
 
 export const heroFleetImage = "/hero-section-images-936x527.webp";
 
+export const galleryImages = [
+  {
+    src: "/gallery-roadside-fitting.webp",
+    alt: "Technician fitting a tyre from the mobile van at a roadside stop",
+    caption: "Roadside Assistance",
+  },
+  {
+    src: "/gallery-evening-callout.webp",
+    alt: "Mobile tyre van responding to an evening callout with hazard lights on",
+    caption: "Evening Emergency Call",
+  },
+  {
+    src: "/gallery-onsite-wheel-fitting.webp",
+    alt: "Technician kneeling to fit a wheel on a customer's car on-site",
+    caption: "On-Site Wheel Fitting",
+  },
+  {
+    src: "/gallery-precision-care.webp",
+    alt: "Freshly serviced customer car parked in the rain outside their home",
+    caption: "Precision & Care",
+  },
+  {
+    src: "/gallery-home-callout.webp",
+    alt: "Mobile tyre fitting van parked on a residential driveway",
+    caption: "Home Callout",
+  },
+  {
+    src: "/gallery-evening-home-visit.webp",
+    alt: "Mobile tyre fitting van at a customer's driveway in the evening light",
+    caption: "Evening Home Visit",
+  },
+] as const;
+
 export const navLinks = [
   { label: "Services", href: "#services" },
   { label: "Coverage", href: "#coverage" },

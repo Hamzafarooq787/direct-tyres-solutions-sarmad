@@ -1,6 +1,7 @@
 import BrandsMarquee from "./BrandsMarquee";
 import CoverageMarquee from "./CoverageMarquee";
 import Footer from "./Footer";
+import Gallery from "./Gallery";
 import Hero from "./Hero";
 import HowItWorks from "./HowItWorks";
 import Navbar from "./Navbar";
@@ -19,6 +20,7 @@ export default function HomePage() {
         <WhyTrustUs />
         <Services />
         <HowItWorks />
+        <Gallery />
         <BrandsMarquee />
         <Pricing />
         <QuoteContact />
