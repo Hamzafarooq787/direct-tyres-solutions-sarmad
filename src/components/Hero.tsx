@@ -3,69 +3,77 @@ import { CheckCircle2, FileText, PhoneCall, Star } from "lucide-react";
 import Reveal from "./Reveal";
 import { heroFleetImage, siteConfig } from "@/lib/site-data";
 
-export default function Hero() {
-  return (
-    <section className="relative min-h-[700px] flex items-center bg-primary overflow-hidden">
-      <div className="absolute inset-0 w-full h-full flex flex-col md:flex-row">
-        <div className="w-full md:w-1/2 h-full bg-primary relative z-20 p-6 md:p-12 lg:p-20 flex items-center">
-          <Reveal className="max-w-xl mx-auto md:ml-auto md:mr-0">
-            <div className="inline-flex items-center px-4 py-1.5 mb-6 rounded-full bg-secondary/10 border border-secondary/30 text-secondary font-bold text-xs tracking-wide uppercase">
-              <span className="w-2 h-2 rounded-full bg-secondary mr-2 animate-pulse" />
-              Technicians on Standby 24/7
-            </div>
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              24/7 Mobile Tyre Fitting — We Come to You
-            </h1>
-            <p className="font-sans text-lg text-gray-300 mb-8 max-w-lg leading-relaxed">
-              Premium service at your doorstep or roadside. Expert
-              technicians, rapid response. Don&apos;t let a flat tyre ruin
-              your day.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-10">
-              <a
-                href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
-                className="animate-pulse-amber btn-scale flex items-center justify-center px-8 py-4 bg-secondary text-primary font-bold rounded-full shadow-lg"
-              >
-                <PhoneCall className="mr-2 h-5 w-5" fill="currentColor" strokeWidth={0} />
-                Call Now — Emergency
-              </a>
-              <a
-                href="#quote"
-                className="btn-scale flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-full hover:bg-white/10 transition-all"
-              >
-                <FileText className="mr-2 h-5 w-5" />
-                Get a Quote
-              </a>
-            </div>
-            <div className="flex items-center space-x-6 text-white/80 font-medium text-sm">
-              <div className="flex items-center">
-                <div className="flex text-secondary mr-2">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} className="h-[18px] w-[18px]" fill="currentColor" strokeWidth={0} />
-                  ))}
-                </div>
-                Rated 5 Stars
-              </div>
-              <div className="flex items-center">
-                <CheckCircle2 className="mr-2 h-5 w-5 text-secondary" fill="currentColor" stroke="var(--color-primary)" />
-                Local Experts
-              </div>
-            </div>
-          </Reveal>
-        </div>
+const trustSignals = [
+  { icon: Star, label: "Rated 5 Stars" },
+  { icon: CheckCircle2, label: "Local Experts" },
+] as const;
 
-        <div className="w-full md:w-1/2 h-full absolute md:relative inset-0 z-10">
-          <div className="absolute inset-0 bg-primary/80 md:hidden z-10" />
-          <div className="hidden md:block absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-primary to-transparent z-10" />
-          <Image
-            alt="Direct Tyre Solutions fleet of mobile tyre-fitting vans outside the depot"
-            src={heroFleetImage}
-            fill
-            priority
-            sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover object-center"
-          />
-        </div>
+export default function Hero() {
+  const telHref = `tel:${siteConfig.phone.replace(/\s/g, "")}`;
+
+  return (
+    <section className="relative min-h-[95vh] flex items-center overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <Image
+          alt="Direct Tyre Solutions fleet of mobile tyre-fitting vans outside the depot"
+          src={heroFleetImage}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/85 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent" />
+      </div>
+
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-12 gap-6 pt-36 md:pt-40 pb-16">
+        <Reveal className="md:col-span-9 lg:col-span-8 flex flex-col justify-center space-y-5">
+          <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-secondary/10 border border-secondary/30 text-secondary font-bold text-xs tracking-wide uppercase w-fit">
+            <span className="w-2 h-2 rounded-full bg-secondary mr-2 animate-pulse" />
+            Technicians on Standby 24/7
+          </div>
+
+          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+            24/7 Mobile Tyre Fitting — We Come to You
+          </h1>
+
+          <p className="font-sans text-lg md:text-xl text-gray-300 max-w-3xl leading-relaxed">
+            Premium service at your doorstep or roadside. Expert
+            technicians, rapid response. Don&apos;t let a flat tyre ruin
+            your day.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-3 pt-1">
+            <a
+              href={telHref}
+              className="animate-pulse-amber btn-scale flex items-center justify-center px-8 py-4 bg-secondary text-primary font-bold rounded-full shadow-lg h-14 text-base w-full sm:w-auto"
+            >
+              <PhoneCall className="mr-2 h-5 w-5" fill="currentColor" strokeWidth={0} />
+              Call Now — Emergency
+            </a>
+            <a
+              href="#quote"
+              className="btn-scale flex items-center justify-center px-8 py-4 bg-white/5 border border-white/30 text-white font-bold rounded-full hover:bg-white hover:text-primary transition-all h-14 text-base w-full sm:w-auto backdrop-blur-sm"
+            >
+              <FileText className="mr-2 h-5 w-5" />
+              Get a Quote
+            </a>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-3 pt-4 border-t border-white/10 max-w-3xl">
+            {trustSignals.map(({ icon: Icon, label }) => (
+              <div
+                key={label}
+                className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-full pl-2 pr-4 py-1.5"
+              >
+                <span className="flex items-center justify-center w-6 h-6 rounded-full bg-secondary/15 shrink-0">
+                  <Icon className="h-3.5 w-3.5 text-secondary" fill="currentColor" stroke="var(--color-primary)" />
+                </span>
+                <span className="text-sm font-semibold text-white/90 tracking-wide">{label}</span>
+              </div>
+            ))}
+          </div>
+        </Reveal>
       </div>
     </section>
   );
