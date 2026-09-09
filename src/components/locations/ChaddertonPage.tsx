@@ -13,8 +13,8 @@ import {
   ChevronDown,
   MapPin,
 } from "lucide-react";
-import Header2 from "@/components/home2/Header2";
-import Footer2 from "@/components/home2/Footer2";
+import LocationHeader from "./LocationHeader";
+import LocationFooter from "./LocationFooter";
 import ScrollDeck from "./ScrollDeck";
 
 const stars = [0, 1, 2, 3, 4];
@@ -57,7 +57,7 @@ const services = [
 export default function ChaddertonPage() {
   return (
     <>
-      <Header2 />
+      <LocationHeader currentSlug="chadderton" />
       <main className="w-full pt-20 bg-[#f7f9fb]">
         {/* 1. SPLIT HERO */}
         <section className="relative bg-[#f2f4f6] overflow-hidden py-12 md:py-18">
@@ -78,7 +78,7 @@ export default function ChaddertonPage() {
                     <span className="inline-block w-2 h-2 rounded-full bg-[#1b61ff] animate-pulse" />
                     On-Call Mobile Tyre Unit
                   </div>
-                  <h1 className="font-['Plus_Jakarta_Sans'] text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] tracking-[-0.02em] md:tracking-[-0.03em] font-extrabold text-[#191c1e]">
+                  <h1 className="text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] tracking-[-0.02em] md:tracking-[-0.03em] font-extrabold text-[#191c1e]">
                     24/7 Mobile Tyre Fitting in Chadderton
                   </h1>
                 </div>
@@ -151,7 +151,7 @@ export default function ChaddertonPage() {
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
                 <div className="lg:col-span-4 space-y-2">
                   <span className="text-[#004ad2] text-[11px] font-bold uppercase tracking-[0.06em]">Local Coverage Engine</span>
-                  <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">
+                  <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">
                     Chadderton&rsquo;s Trusted Roadside Fleet
                   </h2>
                 </div>
@@ -171,7 +171,7 @@ export default function ChaddertonPage() {
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
               <div className="space-y-2">
                 <span className="text-[#004ad2] text-[11px] font-bold uppercase tracking-[0.06em]">Comprehensive Field Solutions</span>
-                <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">
+                <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">
                   Dedicated Chadderton Tyre Services
                 </h2>
                 <p className="text-base text-[#44474e]">Precision vehicle support performed on-site while you wait at home or work.</p>
@@ -214,7 +214,7 @@ export default function ChaddertonPage() {
           <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 space-y-8">
             <div className="text-center max-w-2xl mx-auto space-y-2">
               <span className="text-[#004ad2] text-[11px] font-bold uppercase tracking-[0.06em]">Fast 3-Step Protocol</span>
-              <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">
+              <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">
                 How Our Chadderton Response Operates
               </h2>
               <p className="text-base text-[#44474e]">Zero workshop waiting rooms. We come completely ready to get you moving again.</p>
@@ -268,7 +268,7 @@ export default function ChaddertonPage() {
                   <MapPin className="h-4 w-4" />
                   Local Geographic Perimeter
                 </div>
-                <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-white">
+                <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-white">
                   Chadderton &amp; Surrounding Sectors
                 </h2>
               </div>
@@ -301,7 +301,7 @@ export default function ChaddertonPage() {
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
               <div className="space-y-2">
                 <span className="text-[#004ad2] text-[11px] font-bold uppercase tracking-[0.06em]">Local Customer Feedback</span>
-                <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">
+                <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">
                   Verified Chadderton Rescues
                 </h2>
               </div>
@@ -361,7 +361,7 @@ export default function ChaddertonPage() {
                     <ShieldCheck className="h-[18px] w-[18px] text-[#ffe16d]" />
                     <span className="text-[11px] font-bold uppercase tracking-[0.06em] text-white">OL9 Transparent Guarantee</span>
                   </div>
-                  <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-white">
+                  <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-white">
                     Clear Price Estimates for All Chadderton Postcodes
                   </h2>
                   <p className="text-lg text-[#7686ab] max-w-2xl leading-relaxed">
@@ -402,7 +402,7 @@ export default function ChaddertonPage() {
           <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 space-y-8">
             <div className="max-w-2xl space-y-2">
               <span className="text-[#004ad2] text-[11px] font-bold uppercase tracking-[0.06em]">Common Questions</span>
-              <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">
+              <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">
                 Chadderton Tyre Callout FAQs
               </h2>
               <p className="text-base text-[#44474e]">Key answers regarding our on-location services across Greater Manchester and Oldham borough.</p>
@@ -448,7 +448,7 @@ export default function ChaddertonPage() {
               <div className="lg:col-span-5 space-y-4">
                 <div className="space-y-2">
                   <span className="text-[#004ad2] text-[11px] font-bold uppercase tracking-[0.06em]">Real-Time Dispatch Grid</span>
-                  <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">
+                  <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">
                     Chadderton Radial Coverage
                   </h2>
                 </div>
@@ -500,7 +500,7 @@ export default function ChaddertonPage() {
             <div className="bg-gradient-to-r from-[#000516] via-[#0b1e3d] to-[#0b1e3d] rounded-2xl p-8 md:p-12 shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
               <div className="space-y-2 text-center md:text-left max-w-xl">
                 <span className="text-[11px] font-bold uppercase tracking-[0.06em] text-[#ffe16d]">Immediate Field Dispatch</span>
-                <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] md:text-[56px] md:leading-[64px] tracking-[-0.02em] md:tracking-[-0.03em] font-bold text-white">
+                <h2 className="text-[40px] leading-[48px] md:text-[56px] md:leading-[64px] tracking-[-0.02em] md:tracking-[-0.03em] font-bold text-white">
                   Stuck with a tyre in Chadderton? We&rsquo;re on our way.
                 </h2>
                 <p className="text-base text-[#7686ab]">Don&rsquo;t pay for recovery tow trucks. Get fitted right where you stand within 20 to 35 minutes.</p>
@@ -524,7 +524,7 @@ export default function ChaddertonPage() {
           </div>
         </section>
       </main>
-      <Footer2 />
+      <LocationFooter />
     </>
   );
 }

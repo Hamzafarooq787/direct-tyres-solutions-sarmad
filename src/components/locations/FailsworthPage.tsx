@@ -15,8 +15,8 @@ import {
   Zap,
   Truck,
 } from "lucide-react";
-import Header2 from "@/components/home2/Header2";
-import Footer2 from "@/components/home2/Footer2";
+import LocationHeader from "./LocationHeader";
+import LocationFooter from "./LocationFooter";
 import ScrollDeck from "./ScrollDeck";
 
 const stars = [0, 1, 2, 3, 4];
@@ -82,7 +82,7 @@ const testimonials = [
 export default function FailsworthPage() {
   return (
     <>
-      <Header2 />
+      <LocationHeader currentSlug="failsworth" />
       <main className="w-full pt-20 bg-[#f7f9fb]">
         {/* 1. LAYERED OFFSET HERO */}
         <section className="relative w-full overflow-hidden">
@@ -120,7 +120,7 @@ export default function FailsworthPage() {
                     <span className="text-sm font-bold text-white">4.9 / 5.0</span>
                     <span className="text-sm text-[#e0e3e5]">Verified Google Rating across Oldham &amp; Manchester</span>
                   </div>
-                  <h1 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] md:text-[56px] md:leading-[64px] tracking-[-0.02em] md:tracking-[-0.03em] text-white">
+                  <h1 className="text-[40px] leading-[48px] md:text-[56px] md:leading-[64px] tracking-[-0.02em] md:tracking-[-0.03em] text-white">
                     24/7 Mobile Tyre Fitting in Failsworth
                   </h1>
                   <p className="text-lg text-[#e0e3e5] max-w-2xl leading-relaxed">
@@ -175,7 +175,7 @@ export default function FailsworthPage() {
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
                 <div className="lg:col-span-4 space-y-2">
                   <span className="text-[#004ad2] text-[11px] font-bold uppercase tracking-[0.06em]">Local Community Coverage</span>
-                  <h2 className="font-['Plus_Jakarta_Sans'] text-[30px] leading-[38px] tracking-[-0.015em] font-bold text-[#191c1e]">
+                  <h2 className="text-[30px] leading-[38px] tracking-[-0.015em] font-bold text-[#191c1e]">
                     Failsworth&rsquo;s Trusted Roadside Lifeline
                   </h2>
                   <div className="flex items-center gap-2 pt-1">
@@ -198,7 +198,7 @@ export default function FailsworthPage() {
           <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 space-y-8">
             <div className="text-center max-w-2xl mx-auto space-y-2">
               <span className="text-[#004ad2] text-[11px] font-bold uppercase tracking-[0.06em]">Precision Mobile Workshop</span>
-              <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">Emergency &amp; At-Home Tyre Services</h2>
+              <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">Emergency &amp; At-Home Tyre Services</h2>
               <p className="text-base text-[#44474e]">
                 We stock premium, mid-range, and economy brands inside state-of-the-art mobile fitting bays operating across all Failsworth postcodes (M35).
               </p>
@@ -232,7 +232,7 @@ export default function FailsworthPage() {
               <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4 border-b border-white/10 pb-6">
                 <div>
                   <span className="text-[11px] font-bold uppercase tracking-[0.06em] text-[#ffe16d]">Streamlined Dispatch Flow</span>
-                  <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-white">How Mobile Fitting Works</h2>
+                  <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-white">How Mobile Fitting Works</h2>
                 </div>
                 <div className="flex items-center gap-2 bg-[#1b61ff]/20 px-4 py-1 rounded-full">
                   <Zap className="h-5 w-5 text-[#ffe16d]" />
@@ -284,7 +284,7 @@ export default function FailsworthPage() {
             <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
               <div className="space-y-1">
                 <span className="text-[#ffe16d] text-[11px] font-bold uppercase tracking-[0.06em]">Local Boundary Proximity</span>
-                <h2 className="font-['Plus_Jakarta_Sans'] text-[30px] leading-[38px] tracking-[-0.015em] font-bold text-white">
+                <h2 className="text-[30px] leading-[38px] tracking-[-0.015em] font-bold text-white">
                   Greater Manchester Rapid Response Radius
                 </h2>
               </div>
@@ -327,7 +327,7 @@ export default function FailsworthPage() {
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
               <div className="space-y-1">
                 <span className="text-[#004ad2] text-[11px] font-bold uppercase tracking-[0.06em]">Verified Local Feedback</span>
-                <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">Drivers Rescued in Failsworth</h2>
+                <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">Drivers Rescued in Failsworth</h2>
               </div>
             </div>
             <ScrollDeck>
@@ -367,7 +367,7 @@ export default function FailsworthPage() {
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1b61ff]/20 text-[#ffe16d] text-[11px] font-bold uppercase tracking-[0.06em]">
                     <span>Transparent Failsworth Pricing</span>
                   </div>
-                  <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-white">Instant Guaranteed Local Quote</h2>
+                  <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-white">Instant Guaranteed Local Quote</h2>
                   <p className="text-base text-[#e0e3e5] leading-relaxed">
                     No hidden travel charges or unannounced roadside markups. Every single price quote includes on-site mobile van dispatch, tyre casing, new rubber valves, electronic wheel balancing, and old tyre environmental disposal.
                   </p>
@@ -435,7 +435,7 @@ export default function FailsworthPage() {
           <div className="max-w-3xl mx-auto px-4 md:px-6 space-y-8">
             <div className="text-center space-y-2">
               <span className="text-[#004ad2] text-[11px] font-bold uppercase tracking-[0.06em]">Common Inquiries</span>
-              <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">Frequently Asked Questions</h2>
+              <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">Frequently Asked Questions</h2>
               <p className="text-base text-[#44474e]">Answers to common queries from motorists and fleet managers around Failsworth.</p>
             </div>
             <div className="space-y-3">
@@ -479,7 +479,7 @@ export default function FailsworthPage() {
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div className="space-y-1">
                   <span className="text-[#004ad2] text-[11px] font-bold uppercase tracking-[0.06em]">Geographic Response Map</span>
-                  <h2 className="font-['Plus_Jakarta_Sans'] text-[30px] leading-[38px] tracking-[-0.015em] font-bold text-[#191c1e]">Failsworth A62 &amp; M60 Dispatch Grid</h2>
+                  <h2 className="text-[30px] leading-[38px] tracking-[-0.015em] font-bold text-[#191c1e]">Failsworth A62 &amp; M60 Dispatch Grid</h2>
                 </div>
                 <div className="inline-flex items-center gap-2 bg-[#eceef0] px-4 py-1 rounded-full text-[#191c1e] text-sm">
                   <span className="w-2.5 h-2.5 rounded-full bg-[#1b61ff] animate-pulse" />
@@ -520,7 +520,7 @@ export default function FailsworthPage() {
             <div className="bg-gradient-to-r from-[#000516] via-[#0b1e3d] to-[#0b1e3d] rounded-2xl p-8 md:p-12 shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
               <div className="space-y-2 text-center md:text-left max-w-xl">
                 <span className="text-[11px] font-bold uppercase tracking-[0.06em] text-[#ffe16d]">Immediate Field Dispatch</span>
-                <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] md:text-[56px] md:leading-[64px] tracking-[-0.02em] md:tracking-[-0.03em] font-bold text-white">
+                <h2 className="text-[40px] leading-[48px] md:text-[56px] md:leading-[64px] tracking-[-0.02em] md:tracking-[-0.03em] font-bold text-white">
                   Stuck with a tyre in Failsworth? We&rsquo;re on our way.
                 </h2>
                 <p className="text-base text-[#e0e3e5]">Don&rsquo;t pay for recovery tow trucks. Get fitted right where you stand within 20 to 30 minutes.</p>
@@ -544,7 +544,7 @@ export default function FailsworthPage() {
           </div>
         </section>
       </main>
-      <Footer2 />
+      <LocationFooter />
     </>
   );
 }

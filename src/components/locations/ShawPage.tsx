@@ -12,8 +12,8 @@ import {
   MapPin,
   ShieldCheck,
 } from "lucide-react";
-import Header2 from "@/components/home2/Header2";
-import Footer2 from "@/components/home2/Footer2";
+import LocationHeader from "./LocationHeader";
+import LocationFooter from "./LocationFooter";
 
 const stars = [0, 1, 2, 3, 4];
 
@@ -47,7 +47,7 @@ const services = [
 export default function ShawPage() {
   return (
     <>
-      <Header2 />
+      <LocationHeader currentSlug="shaw" />
       <main className="w-full pt-20 bg-[#f7f9fb]">
         {/* 1. HERO */}
         <section className="relative w-full bg-[#f7f9fb] py-12 lg:py-18 overflow-hidden">
@@ -62,7 +62,7 @@ export default function ShawPage() {
                   <span className="text-[11px] font-bold uppercase tracking-[0.06em] text-[#004ad2]">Shaw &amp; Crompton Rapid Dispatch</span>
                   <span className="text-[#44474e] text-[11px] font-bold">• 20–35 Min Window</span>
                 </div>
-                <h1 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] md:text-[56px] md:leading-[64px] tracking-[-0.02em] md:tracking-[-0.03em] text-[#0b1e3d] font-extrabold mb-4">
+                <h1 className="text-[40px] leading-[48px] md:text-[56px] md:leading-[64px] tracking-[-0.02em] md:tracking-[-0.03em] text-[#0b1e3d] font-extrabold mb-4">
                   24/7 Mobile Tyre Fitting in <span className="text-[#1b61ff] underline decoration-[#ffe16d] decoration-4 underline-offset-8">Shaw</span>
                 </h1>
                 <p className="text-lg text-[#44474e] max-w-xl mb-6 leading-relaxed">
@@ -143,7 +143,7 @@ export default function ShawPage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
               <div className="lg:col-span-4">
                 <span className="text-[#004ad2] text-[11px] font-bold uppercase tracking-[0.06em]">Local Community Expertise</span>
-                <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#0b1e3d] mt-1">
+                <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#0b1e3d] mt-1">
                   Rapid Tyre Care Across Shaw &amp; Crompton
                 </h2>
               </div>
@@ -164,7 +164,7 @@ export default function ShawPage() {
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
               <div>
                 <span className="text-[#004ad2] text-[11px] font-bold uppercase tracking-[0.06em]">Mobile Engineering Solutions</span>
-                <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#0b1e3d] mt-1">Our Shaw Tyre Services</h2>
+                <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#0b1e3d] mt-1">Our Shaw Tyre Services</h2>
               </div>
               <p className="text-base text-[#44474e] max-w-md mt-2 md:mt-0">
                 Equipped to replace, repair, and balance car, 4x4, EV, and light commercial tyres on site wherever your car is parked.
@@ -197,7 +197,7 @@ export default function ShawPage() {
           <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
             <div className="text-center max-w-2xl mx-auto mb-12">
               <span className="text-[#004ad2] text-[11px] font-bold uppercase tracking-[0.06em]">Fast Roadside Recovery</span>
-              <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#0b1e3d] mt-1">3 Simple Steps to Get Rolling</h2>
+              <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#0b1e3d] mt-1">3 Simple Steps to Get Rolling</h2>
               <p className="text-base text-[#44474e] mt-2">From your call to a fully fitted replacement: guaranteed 20–35 minute response anywhere in Shaw.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -234,7 +234,7 @@ export default function ShawPage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
               <div className="lg:col-span-5">
                 <span className="text-[#ffe16d] text-[11px] font-bold uppercase tracking-[0.06em]">Oldham Borough Coverage</span>
-                <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-white mt-2 mb-3">
+                <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-white mt-2 mb-3">
                   Immediate Dispatch Across Shaw &amp; Surrounds
                 </h2>
                 <p className="text-base text-[#7686ab] leading-relaxed">
@@ -287,7 +287,7 @@ export default function ShawPage() {
           <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
             <div className="text-center max-w-xl mx-auto mb-12">
               <span className="text-[#004ad2] text-[11px] font-bold uppercase tracking-[0.06em]">Real Local Experiences</span>
-              <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#0b1e3d] mt-1">Trusted Across Shaw</h2>
+              <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#0b1e3d] mt-1">Trusted Across Shaw</h2>
               <p className="text-base text-[#44474e] mt-1">Read reviews from drivers we have rescued on local roads.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -352,7 +352,7 @@ export default function ShawPage() {
                     <ShieldCheck className="h-4 w-4" />
                     100% Honest Pricing Guarantee
                   </div>
-                  <h3 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-white mb-2">
+                  <h3 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-white mb-2">
                     Transparent Quotes With No Hidden Surcharges in Shaw
                   </h3>
                   <p className="text-lg text-[#7686ab] leading-relaxed max-w-2xl">
@@ -382,7 +382,7 @@ export default function ShawPage() {
           <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
             <div className="text-center max-w-xl mx-auto mb-12">
               <span className="text-[#004ad2] text-[11px] font-bold uppercase tracking-[0.06em]">Frequently Asked Questions</span>
-              <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#0b1e3d] mt-1">Shaw Mobile Tyre Fitting FAQ</h2>
+              <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#0b1e3d] mt-1">Shaw Mobile Tyre Fitting FAQ</h2>
               <p className="text-base text-[#44474e] mt-1">Clear answers to your emergency roadside and driveway queries.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -432,7 +432,7 @@ export default function ShawPage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
               <div className="lg:col-span-4">
                 <span className="text-[#004ad2] text-[11px] font-bold uppercase tracking-[0.06em]">GPS Dispatch Hub</span>
-                <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#0b1e3d] mt-1 mb-3">
+                <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#0b1e3d] mt-1 mb-3">
                   Shaw &amp; Crompton Service Radius
                 </h2>
                 <p className="text-base text-[#44474e] leading-relaxed mb-4">
@@ -489,7 +489,7 @@ export default function ShawPage() {
               <div className="absolute -left-12 -bottom-12 w-64 h-64 rounded-full bg-white/10 blur-2xl pointer-events-none" />
               <div className="max-w-2xl relative z-10">
                 <span className="text-[11px] font-bold uppercase tracking-[0.06em] text-[#dce1ff]">Immediate Roadside Dispatch</span>
-                <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] md:text-[56px] md:leading-[64px] tracking-[-0.02em] md:tracking-[-0.03em] font-extrabold text-white mt-1">
+                <h2 className="text-[40px] leading-[48px] md:text-[56px] md:leading-[64px] tracking-[-0.02em] md:tracking-[-0.03em] font-extrabold text-white mt-1">
                   Stuck with a tyre in Shaw? We&rsquo;re on our way.
                 </h2>
                 <p className="text-lg text-white/90 mt-2 leading-relaxed">
@@ -510,7 +510,7 @@ export default function ShawPage() {
           </div>
         </section>
       </main>
-      <Footer2 />
+      <LocationFooter />
     </>
   );
 }
