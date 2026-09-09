@@ -26,6 +26,29 @@ export const navLinksV2 = [
   { label: "Contact", href: "#contact" },
 ];
 
+export const areasV2 = [
+  {
+    label: "Oldham",
+    href: "/mobile-tyre-fitting-oldham",
+    blurb: "Central hub covering OL1–OL9",
+  },
+  {
+    label: "Chadderton",
+    href: "/mobile-tyre-fitting-chadderton",
+    blurb: "Broadway (A663) & M60 J21",
+  },
+  {
+    label: "Shaw",
+    href: "/mobile-tyre-fitting-shaw",
+    blurb: "Shaw & Crompton, OL2",
+  },
+  {
+    label: "Failsworth",
+    href: "/mobile-tyre-fitting-failsworth",
+    blurb: "Oldham Road (A62) & M60 J22",
+  },
+] as const;
+
 export const trustBrandsV2 = ["MICHELIN", "PIRELLI", "GOODYEAR", "CONTINENTAL", "DUNLOP"];
 
 export const servicesV2 = [
