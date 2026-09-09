@@ -21,9 +21,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tyre Assist 24/7 - Mobile Tyre Fitting",
+  title: "Rapid Response Tyres | 24/7 Mobile Tyre Fitting",
   description:
-    "24/7 mobile tyre fitting that comes to you. Emergency call-outs, home & work fitting, puncture repair and battery jumpstarts across the UK.",
+    "Fast, professional mobile tyre assistance near you. We bring the garage to your location, day or night, across the North West.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -101,7 +101,7 @@ export default function Footer() {
           © {new Date().getFullYear()} {siteConfig.name}. {siteConfig.tagline}.
         </p>
         <Link
-          href="/home-2"
+          href="/"
           className="text-gray-500 hover:text-secondary transition-colors"
         >
           View alternate homepage layout

@@ -100,7 +100,7 @@ export default function Footer2() {
           <a className="hover:text-white transition-colors" href="#">
             Terms of Service
           </a>
-          <Link href="/" className="hover:text-white transition-colors">
+          <Link href="/home-1" className="hover:text-white transition-colors">
             View alternate homepage layout
           </Link>
         </div>
