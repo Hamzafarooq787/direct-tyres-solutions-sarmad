@@ -18,11 +18,11 @@ export default function Gallery2() {
   }
 
   return (
-    <section className="py-24 bg-[#111111]">
+    <section className="py-24 bg-[#0b1e3d]">
       <div className="max-w-7xl mx-auto px-4 md:px-16">
         <Reveal className="flex flex-col md:flex-row justify-between md:items-end mb-12 gap-6">
           <div className="max-w-2xl">
-            <span className="text-[#ff6b00] font-bold tracking-wider uppercase text-sm mb-2 block">
+            <span className="text-[#0058f7] font-bold tracking-wider uppercase text-sm mb-2 block">
               On the Job
             </span>
             <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight">
@@ -34,7 +34,7 @@ export default function Gallery2() {
               type="button"
               onClick={() => scrollByCard(-1)}
               aria-label="Scroll gallery left"
-              className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-[#ff6b00] hover:border-[#ff6b00] transition-colors"
+              className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-[#0058f7] hover:border-[#0058f7] transition-colors"
             >
               <ChevronLeft className="h-5 w-5" />
             </button>
@@ -42,7 +42,7 @@ export default function Gallery2() {
               type="button"
               onClick={() => scrollByCard(1)}
               aria-label="Scroll gallery right"
-              className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-[#ff6b00] hover:border-[#ff6b00] transition-colors"
+              className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-[#0058f7] hover:border-[#0058f7] transition-colors"
             >
               <ChevronRight className="h-5 w-5" />
             </button>
@@ -67,7 +67,7 @@ export default function Gallery2() {
               sizes="280px"
               className="object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-[#111111]/10 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0b1e3d] via-[#0b1e3d]/10 to-transparent" />
             <span className="absolute top-4 left-4 text-white/70 font-mono text-xs">
               {String(i + 1).padStart(2, "0")}
             </span>

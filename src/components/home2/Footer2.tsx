@@ -7,7 +7,7 @@ export default function Footer2() {
   const telHref = `tel:${siteConfigV2.phone.replace(/\s/g, "")}`;
 
   return (
-    <footer className="bg-[#111111] text-gray-400 py-16">
+    <footer className="bg-[#0b1e3d] text-gray-400 py-16">
       <div className="max-w-7xl mx-auto px-4 md:px-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div>
           <div className="mb-6">
@@ -25,7 +25,7 @@ export default function Footer2() {
           </p>
           <div className="flex gap-2">
             <a
-              className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#ff6b00] hover:text-white transition-colors"
+              className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#0058f7] hover:text-white transition-colors"
               href="#"
               aria-label="Share"
             >
@@ -41,7 +41,7 @@ export default function Footer2() {
           <ul className="space-y-4 text-sm font-medium">
             {footerLinksV2.quickLinks.map((link) => (
               <li key={link.label}>
-                <a className="hover:text-[#ff6b00] transition-colors" href={link.href}>
+                <a className="hover:text-[#0058f7] transition-colors" href={link.href}>
                   {link.label}
                 </a>
               </li>
@@ -56,7 +56,7 @@ export default function Footer2() {
           <ul className="space-y-4 text-sm font-medium">
             {footerLinksV2.services.map((link) => (
               <li key={link.label}>
-                <a className="hover:text-[#ff6b00] transition-colors" href={link.href}>
+                <a className="hover:text-[#0058f7] transition-colors" href={link.href}>
                   {link.label}
                 </a>
               </li>
@@ -70,8 +70,8 @@ export default function Footer2() {
           </h4>
           <ul className="space-y-4 text-sm font-medium">
             <li className="flex items-center gap-4">
-              <Phone className="text-[#ff6b00] h-5 w-5" />
-              <a className="text-white font-bold hover:text-[#ff6b00] transition-colors" href={telHref}>
+              <Phone className="text-[#0058f7] h-5 w-5" />
+              <a className="text-white font-bold hover:text-[#0058f7] transition-colors" href={telHref}>
                 {siteConfigV2.phone}
               </a>
             </li>

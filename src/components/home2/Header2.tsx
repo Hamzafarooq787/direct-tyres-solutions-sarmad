@@ -22,7 +22,7 @@ export default function Header2() {
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#1a1a1a] shadow-[0_8px_24px_rgba(0,0,0,0.25)]"
+          ? "bg-[#0b1e3d] shadow-[0_8px_24px_rgba(0,0,0,0.25)]"
           : "bg-transparent"
       }`}
     >
@@ -57,14 +57,14 @@ export default function Header2() {
             </span>
             <a
               href={telHref}
-              className="text-white font-black text-lg tracking-tight hover:text-[#ff6b00] transition-colors"
+              className="text-white font-black text-lg tracking-tight hover:text-[#0058f7] transition-colors"
             >
               {siteConfigV2.phone}
             </a>
           </div>
           <a
             href="#contact"
-            className="bg-[#ff6b00] text-white rounded-full px-4 py-2 font-semibold flex items-center justify-center transition-all duration-300 hover:bg-orange-700 hover:shadow-[0_4px_14px_0_rgba(255,107,0,0.39)] hover:-translate-y-0.5 min-h-[40px] text-sm"
+            className="bg-[#0058f7] text-white rounded-full px-4 py-2 font-semibold flex items-center justify-center transition-all duration-300 hover:bg-[#0046c4] hover:shadow-[0_4px_14px_0_rgba(0,88,247,0.39)] hover:-translate-y-0.5 min-h-[40px] text-sm"
           >
             Get Quote
           </a>
@@ -82,7 +82,7 @@ export default function Header2() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden border-t border-white/10 bg-[#1a1a1a]">
+        <div className="md:hidden border-t border-white/10 bg-[#0b1e3d]">
           <div className="flex flex-col px-4 py-4 space-y-4">
             {navLinksV2.map((link) => (
               <a
@@ -96,7 +96,7 @@ export default function Header2() {
             ))}
             <a
               href={telHref}
-              className="flex items-center justify-center gap-2 px-6 py-3 bg-[#ff6b00] text-white font-bold rounded-full"
+              className="flex items-center justify-center gap-2 px-6 py-3 bg-[#0058f7] text-white font-bold rounded-full"
             >
               <PhoneCall className="h-5 w-5" fill="currentColor" strokeWidth={0} />
               {siteConfigV2.phone}

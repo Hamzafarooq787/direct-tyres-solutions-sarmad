@@ -41,7 +41,7 @@ export default function QuoteContact2() {
   }
 
   return (
-    <section className="bg-[#1a1a1a] py-24 relative overflow-hidden scroll-mt-24" id="contact">
+    <section className="bg-[#0b1e3d] py-24 relative overflow-hidden scroll-mt-24" id="contact">
       <div className="absolute right-0 top-0 w-1/2 h-full opacity-10 pointer-events-none">
         <Image
           alt=""
@@ -66,8 +66,8 @@ export default function QuoteContact2() {
             </div>
             <div className="space-y-6">
               <div className="flex items-start gap-4 group">
-                <div className="w-16 h-16 bg-[#1a1a1a] rounded-2xl flex items-center justify-center shrink-0 border border-white/10 transition-colors group-hover:border-[#ff6b00]/50 group-hover:bg-[#ff6b00]/10">
-                  <PhoneCall className="h-7 w-7 text-[#ff6b00]" fill="currentColor" strokeWidth={0} />
+                <div className="w-16 h-16 bg-[#0b1e3d] rounded-2xl flex items-center justify-center shrink-0 border border-white/10 transition-colors group-hover:border-[#0058f7]/50 group-hover:bg-[#0058f7]/10">
+                  <PhoneCall className="h-7 w-7 text-[#0058f7]" fill="currentColor" strokeWidth={0} />
                 </div>
                 <div className="pt-1">
                   <p className="text-sm text-gray-400 font-semibold uppercase tracking-wider mb-1">
@@ -75,15 +75,15 @@ export default function QuoteContact2() {
                   </p>
                   <a
                     href={telHref}
-                    className="text-3xl font-black text-white hover:text-[#ff6b00] transition-colors tracking-tight block"
+                    className="text-3xl font-black text-white hover:text-[#0058f7] transition-colors tracking-tight block"
                   >
                     {siteConfigV2.phone}
                   </a>
                 </div>
               </div>
               <div className="flex items-start gap-4 group">
-                <div className="w-16 h-16 bg-[#1a1a1a] rounded-2xl flex items-center justify-center shrink-0 border border-white/10 transition-colors group-hover:border-[#ff6b00]/50 group-hover:bg-[#ff6b00]/10">
-                  <Mail className="h-7 w-7 text-[#ff6b00]" />
+                <div className="w-16 h-16 bg-[#0b1e3d] rounded-2xl flex items-center justify-center shrink-0 border border-white/10 transition-colors group-hover:border-[#0058f7]/50 group-hover:bg-[#0058f7]/10">
+                  <Mail className="h-7 w-7 text-[#0058f7]" />
                 </div>
                 <div className="pt-2">
                   <p className="text-sm text-gray-400 font-semibold uppercase tracking-wider mb-1">
@@ -91,15 +91,15 @@ export default function QuoteContact2() {
                   </p>
                   <a
                     href={`mailto:${siteConfigV2.email}`}
-                    className="text-xl font-bold text-white hover:text-[#ff6b00] transition-colors block"
+                    className="text-xl font-bold text-white hover:text-[#0058f7] transition-colors block"
                   >
                     {siteConfigV2.email}
                   </a>
                 </div>
               </div>
               <div className="flex items-start gap-4 group">
-                <div className="w-16 h-16 bg-[#1a1a1a] rounded-2xl flex items-center justify-center shrink-0 border border-white/10 transition-colors group-hover:border-[#ff6b00]/50 group-hover:bg-[#ff6b00]/10">
-                  <MapPin className="h-7 w-7 text-[#ff6b00]" />
+                <div className="w-16 h-16 bg-[#0b1e3d] rounded-2xl flex items-center justify-center shrink-0 border border-white/10 transition-colors group-hover:border-[#0058f7]/50 group-hover:bg-[#0058f7]/10">
+                  <MapPin className="h-7 w-7 text-[#0058f7]" />
                 </div>
                 <div className="pt-2">
                   <p className="text-sm text-gray-400 font-semibold uppercase tracking-wider mb-1">
@@ -114,68 +114,68 @@ export default function QuoteContact2() {
 
           <Reveal delayMs={200} className="flex-1 w-full max-w-xl mx-auto">
             <div className="bg-white p-8 md:p-12 rounded-3xl shadow-2xl border border-gray-100">
-              <h3 className="text-2xl font-black text-[#1a1a1a] mb-6">Request a Callback</h3>
+              <h3 className="text-2xl font-black text-[#0b1e3d] mb-6">Request a Callback</h3>
               <form className="space-y-4" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-bold text-[#1a1a1a] mb-2" htmlFor="name">
+                    <label className="block text-sm font-bold text-[#0b1e3d] mb-2" htmlFor="name">
                       Name
                     </label>
                     <input
                       id="name"
                       name="name"
                       required
-                      className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-[#1a1a1a] focus:ring-2 focus:ring-[#ff6b00] focus:border-transparent transition-all outline-none"
+                      className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-[#0b1e3d] focus:ring-2 focus:ring-[#0058f7] focus:border-transparent transition-all outline-none"
                       placeholder="Your Name"
                       type="text"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-bold text-[#1a1a1a] mb-2" htmlFor="phone">
+                    <label className="block text-sm font-bold text-[#0b1e3d] mb-2" htmlFor="phone">
                       Phone
                     </label>
                     <input
                       id="phone"
                       name="phone"
                       required
-                      className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-[#1a1a1a] focus:ring-2 focus:ring-[#ff6b00] focus:border-transparent transition-all outline-none"
+                      className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-[#0b1e3d] focus:ring-2 focus:ring-[#0058f7] focus:border-transparent transition-all outline-none"
                       placeholder="Phone Number"
                       type="tel"
                     />
                   </div>
                 </div>
                 <div>
-                  <label className="block text-sm font-bold text-[#1a1a1a] mb-2" htmlFor="tyreSize">
+                  <label className="block text-sm font-bold text-[#0b1e3d] mb-2" htmlFor="tyreSize">
                     Tyre Size (Optional)
                   </label>
                   <input
                     id="tyreSize"
                     name="tyreSize"
-                    className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-[#1a1a1a] focus:ring-2 focus:ring-[#ff6b00] focus:border-transparent transition-all outline-none"
+                    className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-[#0b1e3d] focus:ring-2 focus:ring-[#0058f7] focus:border-transparent transition-all outline-none"
                     placeholder="e.g. 205/55 R16"
                     type="text"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-bold text-[#1a1a1a] mb-2" htmlFor="postcode">
+                  <label className="block text-sm font-bold text-[#0b1e3d] mb-2" htmlFor="postcode">
                     Location / Postcode
                   </label>
                   <input
                     id="postcode"
                     name="postcode"
-                    className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-[#1a1a1a] focus:ring-2 focus:ring-[#ff6b00] focus:border-transparent transition-all outline-none"
+                    className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-[#0b1e3d] focus:ring-2 focus:ring-[#0058f7] focus:border-transparent transition-all outline-none"
                     placeholder="Your Location"
                     type="text"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-bold text-[#1a1a1a] mb-2" htmlFor="message">
+                  <label className="block text-sm font-bold text-[#0b1e3d] mb-2" htmlFor="message">
                     Message
                   </label>
                   <textarea
                     id="message"
                     name="message"
-                    className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-[#1a1a1a] focus:ring-2 focus:ring-[#ff6b00] focus:border-transparent transition-all outline-none resize-none"
+                    className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-[#0b1e3d] focus:ring-2 focus:ring-[#0058f7] focus:border-transparent transition-all outline-none resize-none"
                     placeholder="How can we help?"
                     rows={4}
                   />
@@ -183,12 +183,12 @@ export default function QuoteContact2() {
                 <button
                   type="submit"
                   disabled={status === "submitting"}
-                  className="w-full bg-[#ff6b00] text-white rounded-xl px-8 py-4 font-semibold flex items-center justify-center transition-all duration-300 hover:bg-orange-700 hover:shadow-[0_4px_14px_0_rgba(255,107,0,0.39)] hover:-translate-y-0.5 min-h-[60px] text-lg mt-2 shadow-md disabled:opacity-60"
+                  className="w-full bg-[#0058f7] text-white rounded-xl px-8 py-4 font-semibold flex items-center justify-center transition-all duration-300 hover:bg-[#0046c4] hover:shadow-[0_4px_14px_0_rgba(0,88,247,0.39)] hover:-translate-y-0.5 min-h-[60px] text-lg mt-2 shadow-md disabled:opacity-60"
                 >
                   {status === "submitting" ? "Sending..." : "Get My Quote"}
                 </button>
                 {status === "success" && (
-                  <p className="text-[#ff6b00] text-sm font-semibold">
+                  <p className="text-[#0058f7] text-sm font-semibold">
                     Thanks! We&apos;ve received your request and will be in
                     touch shortly.
                   </p>
