@@ -62,7 +62,7 @@ export default function Header2() {
                 </button>
 
                 {areasOpen && (
-                  <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 w-[380px] z-50">
+                  <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 w-[560px] z-50">
                     <div className="bg-[#0b1e3d] border border-white/10 rounded-2xl shadow-2xl p-5">
                       <div className="flex items-center justify-between mb-3 px-1">
                         <span className="text-[11px] font-bold uppercase tracking-widest text-[#ffd700]">
@@ -72,7 +72,7 @@ export default function Header2() {
                           24/7 Dispatch
                         </span>
                       </div>
-                      <div className="grid grid-cols-2 gap-2">
+                      <div className="grid grid-cols-3 gap-2">
                         {areasV2.map((area) => (
                           <Link
                             key={area.href}

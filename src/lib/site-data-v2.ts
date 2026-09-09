@@ -38,6 +38,11 @@ export const areasV2 = [
     blurb: "Broadway (A663) & M60 J21",
   },
   {
+    label: "Royton",
+    href: "/mobile-tyre-fitting-royton",
+    blurb: "A671 & Rochdale Road",
+  },
+  {
     label: "Shaw",
     href: "/mobile-tyre-fitting-shaw",
     blurb: "Shaw & Crompton, OL2",
@@ -46,6 +51,26 @@ export const areasV2 = [
     label: "Failsworth",
     href: "/mobile-tyre-fitting-failsworth",
     blurb: "Oldham Road (A62) & M60 J22",
+  },
+  {
+    label: "Saddleworth",
+    href: "/mobile-tyre-fitting-saddleworth",
+    blurb: "Pennine villages & moorland roads",
+  },
+  {
+    label: "Manchester",
+    href: "/mobile-tyre-fitting-manchester",
+    blurb: "Greater Manchester & M60 ring",
+  },
+  {
+    label: "Manchester City Centre",
+    href: "/mobile-tyre-fitting-manchester-city-centre",
+    blurb: "M1–M4, NCPs & underground bays",
+  },
+  {
+    label: "Ancoats",
+    href: "/mobile-tyre-fitting-ancoats",
+    blurb: "New Islington & Northern Quarter",
   },
 ] as const;
 

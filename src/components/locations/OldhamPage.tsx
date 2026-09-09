@@ -17,15 +17,15 @@ import {
   Zap,
   ChevronDown,
 } from "lucide-react";
-import Header2 from "@/components/home2/Header2";
-import Footer2 from "@/components/home2/Footer2";
+import LocationHeader from "./LocationHeader";
+import LocationFooter from "./LocationFooter";
 
 const stars = [0, 1, 2, 3, 4];
 
 export default function OldhamPage() {
   return (
     <>
-      <Header2 />
+      <LocationHeader currentSlug="oldham" />
       <main className="w-full pt-20 bg-[#f7f9fb]">
         {/* 1. HERO */}
         <section className="relative w-full bg-[#0b1e3d] text-white overflow-hidden min-h-[640px] flex items-center justify-center">
@@ -53,7 +53,7 @@ export default function OldhamPage() {
               <span className="w-1 h-1 rounded-full bg-white/40" />
               <span className="text-sm text-[#7686ab]">500+ Verified Oldham Drivers</span>
             </div>
-            <h1 className="font-['Plus_Jakarta_Sans'] text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] tracking-[-0.02em] md:tracking-[-0.03em] font-extrabold max-w-4xl text-white mb-4">
+            <h1 className="text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] tracking-[-0.02em] md:tracking-[-0.03em] font-extrabold max-w-4xl text-white mb-4">
               24/7 Mobile Tyre Fitting in Oldham
             </h1>
             <p className="text-lg leading-relaxed text-[#7686ab] max-w-2xl mx-auto mb-8">
@@ -61,14 +61,14 @@ export default function OldhamPage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-md">
               <a
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-[#1b61ff] text-white hover:bg-[#004ad2] transition-all shadow-lg hover:shadow-xl font-['Plus_Jakarta_Sans'] text-lg font-semibold"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-[#1b61ff] text-white hover:bg-[#004ad2] transition-all shadow-lg hover:shadow-xl text-lg font-semibold"
                 href="tel:07955266077"
               >
                 <PhoneCall className="h-[22px] w-[22px] text-[#ffe16d]" />
                 <span>Call Now: 07955 266 077</span>
               </a>
               <Link
-                className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm transition-colors font-['Plus_Jakarta_Sans'] text-lg font-semibold"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm transition-colors text-lg font-semibold"
                 href="/#contact"
               >
                 Get a Quote
@@ -90,7 +90,7 @@ export default function OldhamPage() {
                   <Navigation2 className="h-4 w-4" />
                   Local Oldham Service Network
                 </div>
-                <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">
+                <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">
                   Engineered for Oldham&rsquo;s Demanding Hills &amp; Commuter Arteries
                 </h2>
                 <div className="text-lg leading-relaxed text-[#44474e] space-y-4">
@@ -140,7 +140,7 @@ export default function OldhamPage() {
               <div className="text-[#004ad2] text-[11px] font-bold uppercase tracking-[0.06em] mb-1">
                 Complete Mobile Tyre Solutions
               </div>
-              <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">
+              <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">
                 Comprehensive Tyre Services Across Oldham
               </h2>
               <p className="text-base text-[#44474e] mt-2">
@@ -201,7 +201,7 @@ export default function OldhamPage() {
               <div className="text-[#004ad2] text-[11px] font-bold uppercase tracking-[0.06em] mb-1">
                 Frictionless Dispatch
               </div>
-              <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">
+              <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">
                 How Our Oldham Response Operates
               </h2>
               <p className="text-base text-[#44474e] mt-2">From sudden flat to smooth rolling in three seamless steps.</p>
@@ -255,7 +255,7 @@ export default function OldhamPage() {
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="space-y-2 max-w-md">
                 <div className="text-[11px] font-bold uppercase tracking-[0.06em] text-[#ffe16d]">Oldham Hub Coverage</div>
-                <h2 className="font-['Plus_Jakarta_Sans'] text-[30px] leading-[38px] tracking-[-0.015em] font-bold text-white">
+                <h2 className="text-[30px] leading-[38px] tracking-[-0.015em] font-bold text-white">
                   Surrounding Districts &amp; Towns
                 </h2>
                 <p className="text-sm text-[#7686ab]">Vans stationed throughout the borough ensuring instantaneous mobilization to your exact location.</p>
@@ -287,7 +287,7 @@ export default function OldhamPage() {
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
               <div>
                 <div className="text-[#004ad2] text-[11px] font-bold uppercase tracking-[0.06em] mb-1">Real Customer Stories</div>
-                <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">
+                <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">
                   Trusted by Drivers in Oldham
                 </h2>
               </div>
@@ -348,7 +348,7 @@ export default function OldhamPage() {
             <div className="rounded-2xl bg-[#0b1e3d] p-8 md:p-12 shadow-xl flex flex-col md:flex-row items-center justify-between gap-8 text-white">
               <div className="space-y-2 max-w-xl">
                 <div className="text-[11px] font-bold uppercase tracking-[0.06em] text-[#ffe16d]">Guaranteed Transparent Pricing</div>
-                <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-white">
+                <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-white">
                   No Hidden Call-Out Surprises in Oldham
                 </h2>
                 <p className="text-base text-[#7686ab]">
@@ -378,7 +378,7 @@ export default function OldhamPage() {
           <div className="max-w-4xl mx-auto px-4 md:px-6 lg:px-8">
             <div className="text-center mb-12">
               <div className="text-[#004ad2] text-[11px] font-bold uppercase tracking-[0.06em] mb-1">Got Questions?</div>
-              <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">
+              <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">
                 Frequently Asked Questions in Oldham
               </h2>
             </div>
@@ -422,7 +422,7 @@ export default function OldhamPage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
               <div className="lg:col-span-5 space-y-4">
                 <div className="text-[#004ad2] text-[11px] font-bold uppercase tracking-[0.06em]">Live Response Radius</div>
-                <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">
+                <h2 className="text-[40px] leading-[48px] tracking-[-0.02em] font-bold text-[#191c1e]">
                   Stationed Centrally in Oldham
                 </h2>
                 <p className="text-base text-[#44474e]">
@@ -486,7 +486,7 @@ export default function OldhamPage() {
               <span className="h-2 w-2 rounded-full bg-[#ffe16d] animate-pulse" />
               Immediate 24/7 Mobile Assistance
             </div>
-            <h2 className="font-['Plus_Jakarta_Sans'] text-[40px] leading-[48px] md:text-[56px] md:leading-[64px] tracking-[-0.02em] md:tracking-[-0.03em] font-bold text-white max-w-3xl mb-4">
+            <h2 className="text-[40px] leading-[48px] md:text-[56px] md:leading-[64px] tracking-[-0.02em] md:tracking-[-0.03em] font-bold text-white max-w-3xl mb-4">
               Stuck with a Flat Tyre in Oldham? We&rsquo;re on Our Way.
             </h2>
             <p className="text-lg leading-relaxed text-[#7686ab] max-w-xl mb-8">
@@ -517,7 +517,7 @@ export default function OldhamPage() {
           </div>
         </section>
       </main>
-      <Footer2 />
+      <LocationFooter />
     </>
   );
 }
