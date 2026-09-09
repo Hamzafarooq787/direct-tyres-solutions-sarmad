@@ -6,9 +6,9 @@ export const siteConfigV2 = {
   email: "info@rapidresponsetyres.co.uk",
   serviceArea: "North West UK",
   areasCovered: "Oldham, Manchester, Stockport, Warrington, Bolton",
-  logo: "/tyre-assist-red-logo.webp",
-  logoWidth: 1767,
-  logoHeight: 485,
+  logo: "/direct-tyre-solutions-logo.webp",
+  logoWidth: 627,
+  logoHeight: 627,
 };
 
 export const heroImageV2 =

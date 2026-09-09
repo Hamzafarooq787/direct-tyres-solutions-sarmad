@@ -1,10 +1,10 @@
 import BrandsMarquee from "./BrandsMarquee";
 import CoverageMarquee from "./CoverageMarquee";
-import Footer from "./Footer";
 import Gallery from "./Gallery";
+import Header2 from "./home2/Header2";
+import Footer2 from "./home2/Footer2";
 import Hero from "./Hero";
 import HowItWorks from "./HowItWorks";
-import Navbar from "./Navbar";
 import Pricing from "./Pricing";
 import QuoteContact from "./QuoteContact";
 import Services from "./Services";
@@ -13,7 +13,7 @@ import WhyTrustUs from "./WhyTrustUs";
 export default function HomePage() {
   return (
     <>
-      <Navbar />
+      <Header2 />
       <main>
         <Hero />
         <CoverageMarquee />
@@ -25,7 +25,7 @@ export default function HomePage() {
         <Pricing />
         <QuoteContact />
       </main>
-      <Footer />
+      <Footer2 />
     </>
   );
 }

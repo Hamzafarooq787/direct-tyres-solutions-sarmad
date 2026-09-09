@@ -39,7 +39,7 @@ export default function QuoteContact() {
   }
 
   return (
-    <section id="quote" className="py-24 bg-primary text-white px-4 md:px-8">
+    <section id="contact" className="py-24 bg-primary text-white px-4 md:px-8 scroll-mt-24">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
         <Reveal>
           <div className="bg-primary-light p-8 md:p-10 rounded-[14px]">

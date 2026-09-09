@@ -3,9 +3,6 @@ export const siteConfig = {
   tagline: "Mobile Tyre Fitting Excellence",
   phone: "0800 123 4567",
   email: "info@tyreassist247.co.uk",
-  logo: "/Tyres-assist-logo-yellow.webp",
-  logoWidth: 1238,
-  logoHeight: 293,
 };
 
 export const heroFleetImage = "/hero-section-images-936x527.webp";
@@ -42,13 +39,6 @@ export const galleryImages = [
     caption: "Evening Home Visit",
   },
 ] as const;
-
-export const navLinks = [
-  { label: "Services", href: "#services" },
-  { label: "Coverage", href: "#coverage" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "Reviews", href: "#reviews" },
-];
 
 export const coverageAreas = [
   "LONDON",

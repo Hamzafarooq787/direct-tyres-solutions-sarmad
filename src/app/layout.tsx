@@ -24,6 +24,11 @@ export const metadata: Metadata = {
   title: "Rapid Response Tyres | 24/7 Mobile Tyre Fitting",
   description:
     "Fast, professional mobile tyre assistance near you. We bring the garage to your location, day or night, across the North West.",
+  icons: {
+    icon: "/direct-tyre-solutions-icon.webp",
+    shortcut: "/direct-tyre-solutions-icon.webp",
+    apple: "/direct-tyre-solutions-icon.webp",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
