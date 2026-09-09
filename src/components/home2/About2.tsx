@@ -11,10 +11,10 @@ export default function About2() {
       <div className="max-w-7xl mx-auto px-4 md:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <Reveal className="order-2 lg:order-1">
-            <span className="text-[#ff6b00] font-bold tracking-wider uppercase text-sm mb-2 block">
+            <span className="text-[#0058f7] font-bold tracking-wider uppercase text-sm mb-2 block">
               About {siteConfigV2.name}
             </span>
-            <h2 className="text-4xl md:text-5xl font-black text-[#1a1a1a] tracking-tight mb-6">
+            <h2 className="text-4xl md:text-5xl font-black text-[#0b1e3d] tracking-tight mb-6">
               Driven by Reliability &amp; Customer Satisfaction.
             </h2>
             <div className="space-y-4 text-[#5a4136] text-lg leading-relaxed mb-8">
@@ -39,10 +39,10 @@ export default function About2() {
                     className="flex items-center gap-2 bg-[#f6f3f2] p-4 rounded-2xl flex-1"
                   >
                     <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0">
-                      <Icon className="h-5 w-5 text-[#ff6b00]" />
+                      <Icon className="h-5 w-5 text-[#0058f7]" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#1a1a1a]">{stat.title}</h4>
+                      <h4 className="font-bold text-[#0b1e3d]">{stat.title}</h4>
                       <p className="text-sm text-[#5a4136]">{stat.description}</p>
                     </div>
                   </div>
@@ -52,7 +52,7 @@ export default function About2() {
           </Reveal>
 
           <Reveal delayMs={200} className="order-1 lg:order-2 relative">
-            <div className="absolute inset-0 bg-[#ff6b00] rounded-[2rem] transform translate-x-4 translate-y-4 opacity-20" />
+            <div className="absolute inset-0 bg-[#0058f7] rounded-[2rem] transform translate-x-4 translate-y-4 opacity-20" />
             <div className="relative z-10 w-full h-[500px] rounded-[2rem] shadow-2xl overflow-hidden">
               <Image
                 alt={`${siteConfigV2.name} technician with a branded mobile tyre-fitting van`}

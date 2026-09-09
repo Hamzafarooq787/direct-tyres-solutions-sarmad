@@ -10,7 +10,7 @@ export default function TrustStrip2() {
           {items.map((brand, i) => (
             <span
               key={`${brand}-${i}`}
-              className="text-xl font-black tracking-widest text-[#1a1a1a] shrink-0"
+              className="text-xl font-black tracking-widest text-[#0b1e3d] shrink-0"
             >
               {brand}
             </span>

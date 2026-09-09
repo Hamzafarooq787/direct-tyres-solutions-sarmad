@@ -24,8 +24,8 @@ export default function Hero2() {
           sizes="100vw"
           className="object-cover scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a] via-[#1a1a1a]/85 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/70 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0b1e3d] via-[#0b1e3d]/85 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0b1e3d]/70 via-transparent to-transparent" />
       </div>
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-16 grid grid-cols-1 md:grid-cols-12 gap-6 pt-28 sm:pt-32 md:pt-40 pb-16">
@@ -33,8 +33,8 @@ export default function Hero2() {
           <div className="inline-flex items-center gap-2.5 bg-white rounded-full shadow-[0_8px_30px_rgba(0,0,0,0.25)] pl-2.5 pr-4 py-1.5 w-fit whitespace-nowrap">
             <GoogleIcon className="h-5 w-5 shrink-0" />
             <div className="h-4 w-px bg-gray-200 shrink-0" />
-            <span className="text-sm font-black text-[#1a1a1a]">4.9</span>
-            <div className="flex text-[#FBBC05] shrink-0">
+            <span className="text-sm font-black text-[#0b1e3d]">4.9</span>
+            <div className="flex text-[#FFD700] shrink-0">
               {Array.from({ length: 5 }).map((_, i) => (
                 <Star key={i} className="h-3 w-3" fill="currentColor" strokeWidth={0} />
               ))}
@@ -43,13 +43,13 @@ export default function Hero2() {
           </div>
 
           <div>
-            <span className="inline-flex items-center gap-2 text-[#ff6b00] font-bold text-sm tracking-[0.1em] uppercase mb-3">
-              <span className="w-2 h-2 rounded-full bg-[#ff6b00] animate-pulse" />
+            <span className="inline-flex items-center gap-2 text-[#0058f7] font-bold text-sm tracking-[0.1em] uppercase mb-3">
+              <span className="w-2 h-2 rounded-full bg-[#0058f7] animate-pulse" />
               North West&apos;s Trusted Mobile Tyre Specialist
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[1.1] tracking-tight uppercase">
               24/7 Mobile <br />
-              <span className="text-[#ff6b00]">Tyre Fitting</span>
+              <span className="text-[#0058f7]">Tyre Fitting</span>
             </h1>
           </div>
 
@@ -62,7 +62,7 @@ export default function Hero2() {
           <div className="flex flex-col sm:flex-row gap-3 pt-1">
             <a
               href={telHref}
-              className="bg-[#ff6b00] text-white rounded-full px-6 sm:px-8 py-3.5 font-semibold flex items-center justify-center gap-2 transition-all duration-300 hover:bg-orange-700 hover:shadow-[0_4px_14px_0_rgba(255,107,0,0.39)] hover:-translate-y-0.5 w-full sm:w-auto min-h-14 text-sm sm:text-base"
+              className="bg-[#0058f7] text-white rounded-full px-6 sm:px-8 py-3.5 font-semibold flex items-center justify-center gap-2 transition-all duration-300 hover:bg-[#0046c4] hover:shadow-[0_4px_14px_0_rgba(0,88,247,0.39)] hover:-translate-y-0.5 w-full sm:w-auto min-h-14 text-sm sm:text-base"
             >
               <PhoneCall className="h-5 w-5 shrink-0" fill="currentColor" strokeWidth={0} />
               <span>
@@ -71,7 +71,7 @@ export default function Hero2() {
             </a>
             <a
               href="#"
-              className="bg-white/5 border border-white/30 text-white rounded-full px-6 sm:px-8 py-3.5 font-semibold flex items-center justify-center gap-2 transition-all duration-300 hover:bg-white hover:text-[#1a1a1a] w-full sm:w-auto min-h-14 text-sm sm:text-base backdrop-blur-sm"
+              className="bg-white/5 border border-white/30 text-white rounded-full px-6 sm:px-8 py-3.5 font-semibold flex items-center justify-center gap-2 transition-all duration-300 hover:bg-white hover:text-[#0b1e3d] w-full sm:w-auto min-h-14 text-sm sm:text-base backdrop-blur-sm"
             >
               <MessageCircle className="h-5 w-5 shrink-0" />
               WhatsApp Support
@@ -84,8 +84,8 @@ export default function Hero2() {
                 key={label}
                 className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-full pl-2 pr-4 py-1.5"
               >
-                <span className="flex items-center justify-center w-6 h-6 rounded-full bg-[#ff6b00]/15 shrink-0">
-                  <Icon className="h-3.5 w-3.5 text-[#ff6b00]" />
+                <span className="flex items-center justify-center w-6 h-6 rounded-full bg-[#0058f7]/15 shrink-0">
+                  <Icon className="h-3.5 w-3.5 text-[#0058f7]" />
                 </span>
                 <span className="text-sm font-semibold text-white/90 tracking-wide">{label}</span>
               </div>
