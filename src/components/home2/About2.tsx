@@ -7,17 +7,17 @@ const icons = { "verified-user": ShieldCheck, group: Users } as const;
 
 export default function About2() {
   return (
-    <section className="py-24 bg-[#fcf9f8] scroll-mt-24" id="about">
+    <section className="py-24 bg-[#081426] scroll-mt-24" id="about">
       <div className="max-w-7xl mx-auto px-4 md:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <Reveal className="order-2 lg:order-1">
             <span className="text-[#0058f7] font-bold tracking-wider uppercase text-sm mb-2 block">
               About {siteConfigV2.name}
             </span>
-            <h2 className="text-4xl md:text-5xl font-black text-[#0b1e3d] tracking-tight mb-6">
+            <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight mb-6">
               Driven by Reliability &amp; Customer Satisfaction.
             </h2>
-            <div className="space-y-4 text-[#5a4136] text-lg leading-relaxed mb-8">
+            <div className="space-y-4 text-gray-400 text-lg leading-relaxed mb-8">
               <p>
                 At {siteConfigV2.name}, we understand that a tyre problem
                 rarely happens at a convenient time. That&apos;s why we built
@@ -36,14 +36,14 @@ export default function About2() {
                 return (
                   <div
                     key={stat.title}
-                    className="flex items-center gap-2 bg-[#f6f3f2] p-4 rounded-2xl flex-1"
+                    className="flex items-center gap-2 bg-white/5 border border-white/10 p-4 rounded-2xl flex-1"
                   >
-                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0">
+                    <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center shrink-0">
                       <Icon className="h-5 w-5 text-[#0058f7]" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#0b1e3d]">{stat.title}</h4>
-                      <p className="text-sm text-[#5a4136]">{stat.description}</p>
+                      <h4 className="font-bold text-white">{stat.title}</h4>
+                      <p className="text-sm text-gray-400">{stat.description}</p>
                     </div>
                   </div>
                 );

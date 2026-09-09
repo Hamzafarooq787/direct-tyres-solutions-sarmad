@@ -12,21 +12,21 @@ const icons = {
 
 export default function ServicesGrid2() {
   return (
-    <section className="py-24 bg-white scroll-mt-24" id="services">
+    <section className="py-24 bg-[#0b1e3d] scroll-mt-24" id="services">
       <div className="max-w-7xl mx-auto px-4 md:px-16">
         <Reveal className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
           <div className="max-w-2xl">
-            <h2 className="text-4xl md:text-5xl font-black text-[#0b1e3d] tracking-tight mb-4">
+            <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight mb-4">
               Premium Services.
             </h2>
-            <p className="text-[#5a4136] text-lg">
+            <p className="text-gray-400 text-lg">
               Comprehensive mobile tyre fitting and repair solutions tailored
               to your needs, delivered with precision.
             </p>
           </div>
           <a
             href="#contact"
-            className="hidden md:flex bg-transparent border border-gray-300 text-[#0b1e3d] rounded-full px-6 py-2 font-semibold items-center justify-center transition-all duration-300 hover:border-gray-500 hover:bg-gray-50"
+            className="hidden md:flex bg-transparent border border-white/20 text-white rounded-full px-6 py-2 font-semibold items-center justify-center transition-all duration-300 hover:border-white/40 hover:bg-white/5"
           >
             View All Services
           </a>
@@ -37,7 +37,7 @@ export default function ServicesGrid2() {
             const Icon = icons[service.icon as keyof typeof icons];
             return (
               <Reveal key={service.title} delayMs={i * 100}>
-                <div className="group relative rounded-3xl overflow-hidden h-[450px] border border-[#f0edec] transition-transform duration-500 ease-out hover:-translate-y-2.5 hover:shadow-xl">
+                <div className="group relative rounded-3xl overflow-hidden h-[450px] border border-white/10 transition-transform duration-500 ease-out hover:-translate-y-2.5 hover:shadow-xl">
                   <Image
                     alt={service.title}
                     src={service.image}

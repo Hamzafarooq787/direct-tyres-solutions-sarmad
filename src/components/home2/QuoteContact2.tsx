@@ -113,69 +113,69 @@ export default function QuoteContact2() {
           </Reveal>
 
           <Reveal delayMs={200} className="flex-1 w-full max-w-xl mx-auto">
-            <div className="bg-white p-8 md:p-12 rounded-3xl shadow-2xl border border-gray-100">
-              <h3 className="text-2xl font-black text-[#0b1e3d] mb-6">Request a Callback</h3>
+            <div className="bg-white/5 backdrop-blur-sm p-8 md:p-12 rounded-3xl shadow-2xl border border-white/10">
+              <h3 className="text-2xl font-black text-white mb-6">Request a Callback</h3>
               <form className="space-y-4" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-bold text-[#0b1e3d] mb-2" htmlFor="name">
+                    <label className="block text-sm font-bold text-white mb-2" htmlFor="name">
                       Name
                     </label>
                     <input
                       id="name"
                       name="name"
                       required
-                      className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-[#0b1e3d] focus:ring-2 focus:ring-[#0058f7] focus:border-transparent transition-all outline-none"
+                      className="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-2 text-white placeholder:text-gray-500 focus:ring-2 focus:ring-[#0058f7] focus:border-transparent transition-all outline-none"
                       placeholder="Your Name"
                       type="text"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-bold text-[#0b1e3d] mb-2" htmlFor="phone">
+                    <label className="block text-sm font-bold text-white mb-2" htmlFor="phone">
                       Phone
                     </label>
                     <input
                       id="phone"
                       name="phone"
                       required
-                      className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-[#0b1e3d] focus:ring-2 focus:ring-[#0058f7] focus:border-transparent transition-all outline-none"
+                      className="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-2 text-white placeholder:text-gray-500 focus:ring-2 focus:ring-[#0058f7] focus:border-transparent transition-all outline-none"
                       placeholder="Phone Number"
                       type="tel"
                     />
                   </div>
                 </div>
                 <div>
-                  <label className="block text-sm font-bold text-[#0b1e3d] mb-2" htmlFor="tyreSize">
+                  <label className="block text-sm font-bold text-white mb-2" htmlFor="tyreSize">
                     Tyre Size (Optional)
                   </label>
                   <input
                     id="tyreSize"
                     name="tyreSize"
-                    className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-[#0b1e3d] focus:ring-2 focus:ring-[#0058f7] focus:border-transparent transition-all outline-none"
+                    className="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-2 text-white placeholder:text-gray-500 focus:ring-2 focus:ring-[#0058f7] focus:border-transparent transition-all outline-none"
                     placeholder="e.g. 205/55 R16"
                     type="text"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-bold text-[#0b1e3d] mb-2" htmlFor="postcode">
+                  <label className="block text-sm font-bold text-white mb-2" htmlFor="postcode">
                     Location / Postcode
                   </label>
                   <input
                     id="postcode"
                     name="postcode"
-                    className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-[#0b1e3d] focus:ring-2 focus:ring-[#0058f7] focus:border-transparent transition-all outline-none"
+                    className="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-2 text-white placeholder:text-gray-500 focus:ring-2 focus:ring-[#0058f7] focus:border-transparent transition-all outline-none"
                     placeholder="Your Location"
                     type="text"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-bold text-[#0b1e3d] mb-2" htmlFor="message">
+                  <label className="block text-sm font-bold text-white mb-2" htmlFor="message">
                     Message
                   </label>
                   <textarea
                     id="message"
                     name="message"
-                    className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-[#0b1e3d] focus:ring-2 focus:ring-[#0058f7] focus:border-transparent transition-all outline-none resize-none"
+                    className="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-2 text-white placeholder:text-gray-500 focus:ring-2 focus:ring-[#0058f7] focus:border-transparent transition-all outline-none resize-none"
                     placeholder="How can we help?"
                     rows={4}
                   />
@@ -188,13 +188,13 @@ export default function QuoteContact2() {
                   {status === "submitting" ? "Sending..." : "Get My Quote"}
                 </button>
                 {status === "success" && (
-                  <p className="text-[#0058f7] text-sm font-semibold">
+                  <p className="text-[#5b9bff] text-sm font-semibold">
                     Thanks! We&apos;ve received your request and will be in
                     touch shortly.
                   </p>
                 )}
                 {status === "error" && (
-                  <p className="text-red-600 text-sm font-semibold">
+                  <p className="text-red-400 text-sm font-semibold">
                     Something went wrong. Please call us directly instead.
                   </p>
                 )}
