@@ -27,7 +27,7 @@ export default function Header2() {
       }`}
     >
       <div className="flex justify-between items-center w-full px-4 md:px-16 py-3 max-w-7xl mx-auto">
-        <Link href="/home-2" className="flex items-center h-14 shrink-0">
+        <Link href="/" className="flex items-center h-14 shrink-0">
           <Image
             alt={`${siteConfigV2.name} Logo`}
             src={siteConfigV2.logo}

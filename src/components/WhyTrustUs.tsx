@@ -6,7 +6,7 @@ const icons = { clock: Clock, wrench: Wrench, tag: Tag } as const;
 
 export default function WhyTrustUs() {
   return (
-    <section className="py-24 bg-surface-light px-4 md:px-8">
+    <section className="py-24 bg-surface-light px-4 md:px-8 scroll-mt-24" id="about">
       <div className="max-w-7xl mx-auto">
         <Reveal className="text-center mb-16">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-4">
