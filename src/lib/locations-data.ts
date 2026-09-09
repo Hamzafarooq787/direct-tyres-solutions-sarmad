@@ -12,4 +12,9 @@ export const locationAreas = [
     href: "/mobile-tyre-fitting-manchester-city-centre",
   },
   { slug: "ancoats", label: "Ancoats", href: "/mobile-tyre-fitting-ancoats" },
+  { slug: "uppermill", label: "Uppermill", href: "/mobile-tyre-fitting-uppermill" },
+  { slug: "cheetham-hill", label: "Cheetham Hill", href: "/mobile-tyre-fitting-cheetham-hill" },
+  { slug: "blackley", label: "Blackley", href: "/mobile-tyre-fitting-blackley" },
+  { slug: "chorlton", label: "Chorlton", href: "/mobile-tyre-fitting-chorlton" },
+  { slug: "didsbury", label: "Didsbury", href: "/mobile-tyre-fitting-didsbury" },
 ] as const;

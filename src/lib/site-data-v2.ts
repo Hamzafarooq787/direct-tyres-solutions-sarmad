@@ -72,6 +72,31 @@ export const areasV2 = [
     href: "/mobile-tyre-fitting-ancoats",
     blurb: "New Islington & Northern Quarter",
   },
+  {
+    label: "Uppermill",
+    href: "/mobile-tyre-fitting-uppermill",
+    blurb: "Saddleworth village & canal basin",
+  },
+  {
+    label: "Cheetham Hill",
+    href: "/mobile-tyre-fitting-cheetham-hill",
+    blurb: "A665 corridor & Manchester Fort",
+  },
+  {
+    label: "Blackley",
+    href: "/mobile-tyre-fitting-blackley",
+    blurb: "Rochdale Road (A664) & M8/M9",
+  },
+  {
+    label: "Chorlton",
+    href: "/mobile-tyre-fitting-chorlton",
+    blurb: "Chorlton-cum-Hardy & M21",
+  },
+  {
+    label: "Didsbury",
+    href: "/mobile-tyre-fitting-didsbury",
+    blurb: "East & West Didsbury, M20",
+  },
 ] as const;
 
 export const trustBrandsV2 = ["MICHELIN", "PIRELLI", "GOODYEAR", "CONTINENTAL", "DUNLOP"];
