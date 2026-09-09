@@ -17,4 +17,9 @@ export const locationAreas = [
   { slug: "blackley", label: "Blackley", href: "/mobile-tyre-fitting-blackley" },
   { slug: "chorlton", label: "Chorlton", href: "/mobile-tyre-fitting-chorlton" },
   { slug: "didsbury", label: "Didsbury", href: "/mobile-tyre-fitting-didsbury" },
+  { slug: "gorton", label: "Gorton", href: "/mobile-tyre-fitting-gorton" },
+  { slug: "longsight", label: "Longsight", href: "/mobile-tyre-fitting-longsight" },
+  { slug: "moston", label: "Moston", href: "/mobile-tyre-fitting-moston" },
+  { slug: "newton-heath", label: "Newton Heath", href: "/mobile-tyre-fitting-newton-heath" },
+  { slug: "rochdale", label: "Rochdale", href: "/mobile-tyre-fitting-rochdale" },
 ] as const;

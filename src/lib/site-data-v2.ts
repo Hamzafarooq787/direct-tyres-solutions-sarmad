@@ -97,6 +97,31 @@ export const areasV2 = [
     href: "/mobile-tyre-fitting-didsbury",
     blurb: "East & West Didsbury, M20",
   },
+  {
+    label: "Gorton",
+    href: "/mobile-tyre-fitting-gorton",
+    blurb: "Hyde Road (A57) & East Manchester",
+  },
+  {
+    label: "Longsight",
+    href: "/mobile-tyre-fitting-longsight",
+    blurb: "Stockport Road (A6), M12/M13",
+  },
+  {
+    label: "Moston",
+    href: "/mobile-tyre-fitting-moston",
+    blurb: "Lightbowne Rd & North Manchester",
+  },
+  {
+    label: "Newton Heath",
+    href: "/mobile-tyre-fitting-newton-heath",
+    blurb: "Oldham Road (A62), M40",
+  },
+  {
+    label: "Rochdale",
+    href: "/mobile-tyre-fitting-rochdale",
+    blurb: "Rochdale Borough & M62 corridor",
+  },
 ] as const;
 
 export const trustBrandsV2 = ["MICHELIN", "PIRELLI", "GOODYEAR", "CONTINENTAL", "DUNLOP"];
