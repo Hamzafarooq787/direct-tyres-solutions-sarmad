@@ -11,7 +11,7 @@ export default function Header3() {
   const telHref = `tel:${siteConfig3.phone.replace(/\s/g, "")}`;
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-white shadow-[0_2px_10px_rgba(0,0,0,0.08)]">
+    <header className="fixed top-0 w-full z-50 bg-primary-dark shadow-[0_2px_10px_rgba(0,0,0,0.35)]">
       <div className="flex items-center justify-between w-full px-4 md:px-8 py-3 max-w-7xl mx-auto gap-4">
         <Link href="/home-3" className="flex items-center h-12 shrink-0">
           <Image
@@ -30,7 +30,7 @@ export default function Header3() {
               key={link.label}
               href={link.href}
               className={`nav-link text-sm font-semibold transition-colors ${
-                i === 0 ? "nav-link-active text-primary" : "text-gray-700 hover:text-primary"
+                i === 0 ? "nav-link-active text-white" : "text-gray-300 hover:text-white"
               }`}
             >
               {link.label}
@@ -44,10 +44,10 @@ export default function Header3() {
               <PhoneCall className="h-4 w-4" fill="currentColor" strokeWidth={0} />
             </span>
             <span className="flex flex-col leading-tight">
-              <span className="text-[11px] font-semibold text-gray-500 uppercase tracking-wide">
+              <span className="text-[11px] font-semibold text-gray-400 uppercase tracking-wide">
                 Call 24/7
               </span>
-              <span className="text-sm font-bold text-primary">{siteConfig3.phone}</span>
+              <span className="text-sm font-bold text-white">{siteConfig3.phone}</span>
             </span>
           </a>
           <a
@@ -60,7 +60,7 @@ export default function Header3() {
 
         <button
           type="button"
-          className="lg:hidden text-primary p-2"
+          className="lg:hidden text-white p-2"
           aria-label="Toggle menu"
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((open) => !open)}
@@ -70,13 +70,13 @@ export default function Header3() {
       </div>
 
       {menuOpen && (
-        <div className="lg:hidden border-t border-gray-100 bg-white">
+        <div className="lg:hidden border-t border-white/10 bg-primary-dark">
           <div className="flex flex-col px-4 py-4 space-y-1">
             {navLinks3.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
-                className="py-2 text-sm font-semibold text-gray-700"
+                className="py-2 text-sm font-semibold text-gray-300"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}
